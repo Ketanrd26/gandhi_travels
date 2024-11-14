@@ -105,5 +105,22 @@ a {
     color: var(--white);
   }
 }
+.btn-active {
+  width: auto;
+  padding: calc(var(--unit) / 2) var(--unit);
+  border-radius: 25px;
+  border: 1px solid var(--accent);
+  
+  font-size: var(--unit);
+  font-weight: 500;
+  transition: var(--trans-m);
+  background-color: var(--accent);
+  color: var(--white);
+
+  &:hover{
+    background-color: transparent;
+    color: var(--accent);
+  }
+}
 
 
