@@ -50,6 +50,7 @@
  
   }
   .home-cont{
+    gap:10px;
     position: absolute;
     top:50%;
     z-index: 2;
@@ -63,6 +64,15 @@
         font-size:60px;
         color:white;
         font-family: "Courgette", cursive;
+        
+    }
+    .desc{
+        font-size: 20px;
+        color:var(--accent);
+    }
+    .btn-group{
+        display: flex;
+        gap:var(--unit);
     }
     
   }

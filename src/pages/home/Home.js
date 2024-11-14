@@ -12,7 +12,7 @@ const Home = () => {
       <div className="home-parent parent">
         <Swiper
           cssMode={true}
-          navigation={true}
+          navigation={false}
           pagination={true}
           mousewheel={true}
           keyboard={true}
@@ -34,7 +34,7 @@ const Home = () => {
             <div className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla dolor aliquid consectetur!</div>
             <div className="btn-group">
               <div className="btn">Contact Now</div>
-              <div className="btn">About Us</div>
+              <div className="btn-active">About Us</div>
             </div>
           </div>
         </Swiper>
