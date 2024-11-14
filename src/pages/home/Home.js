@@ -9,6 +9,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 const Home = () => {
   return (
     <>
+    {/* First Section */}
       <div className="home-parent parent">
         <Swiper
           cssMode={true}
@@ -31,13 +32,24 @@ const Home = () => {
           </SwiperSlide>
           <div className="home-cont">
             <h1 className="home-heading">Gandhi's Travels</h1>
-            <div className="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam nulla dolor aliquid consectetur!</div>
+            <div className="desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              nulla dolor aliquid consectetur!
+            </div>
             <div className="btn-group">
               <div className="btn">Contact Now</div>
               <div className="btn-active">About Us</div>
             </div>
           </div>
         </Swiper>
+      </div>
+
+      {/* Second Section */}
+      <div className="home-about-parent parent">
+        <div className="home-about-cont cont">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          
+        </div>
       </div>
     </>
   );

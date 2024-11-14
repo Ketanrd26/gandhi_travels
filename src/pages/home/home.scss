@@ -1,3 +1,4 @@
+// First Section 
 .home-parent {
     position: relative;
   p {
@@ -17,6 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .swiper-pagination-bullet{
+    background-color: #ff00008f;
+    width:20px;
+    height:20px;
   }
   
   .box {
@@ -78,3 +84,5 @@
   }
   
 }
+
+// Second Section
