@@ -1,0 +1,49 @@
+.vehicle-desc-parent {
+  height: auto;
+  padding: 40px 0px;
+  width: 100%;
+
+  .vehicle-desc-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--unit);
+
+    .top-nav {
+      width: 100%;
+      height: auto;
+      border-radius: var(--unit);
+      box-shadow: var(--shadow);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+overflow: hidden;
+      gap: var(--unit);
+
+      .swiperslide {
+        width: fit-content;
+        height: 200px;
+        cursor: pointer;
+        border-bottom: 1px solid red;
+        .vehicle {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 100px;
+            aspect-ratio: 1;
+          }
+
+          P {
+            font-size: calc(var(--unit) - 5px);
+          }
+        }
+      }
+    }
+  }
+}
