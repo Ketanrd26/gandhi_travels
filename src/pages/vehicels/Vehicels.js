@@ -3,7 +3,7 @@ import "./vehicel.scss";
 import Pagetop from "../../comp/pagetop/Pagetop";
 
 // vehicels images
-import bus from "../../assests/bus.jpg"
+import bus from "../../assests/bus.jpg";
 
 // icons
 import bus_icon from "../../assests/icons/bus_icon.webp";
@@ -17,13 +17,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-
 // 45 ac volo eicher
-import volvo1 from "../../assests/vehicles/vovlo/image_1.jpg"
-import volvo2 from "../../assests/vehicles/vovlo/image_2.jpg"
-import volvo3 from "../../assests/vehicles/vovlo/image_3.jpg"
-import volvo4 from "../../assests/vehicles/vovlo/image_4.jpg"
-import volvo5 from "../../assests/vehicles/vovlo/image_5.jpg"
+import volvo1 from "../../assests/vehicles/vovlo/image_1.jpg";
+import volvo2 from "../../assests/vehicles/vovlo/image_2.jpg";
+import volvo3 from "../../assests/vehicles/vovlo/image_3.jpg";
+import volvo4 from "../../assests/vehicles/vovlo/image_4.jpg";
+import volvo5 from "../../assests/vehicles/vovlo/image_5.jpg";
 
 const Vehicels = () => {
   const vehicelsHeading = [
@@ -46,7 +45,6 @@ const Vehicels = () => {
       image1: bus_icon,
       image2: bus_icon_fill,
       vehicle_name: "45 Ac Volvo Eicher Bus",
-      
     },
     {
       image1: bus_icon,
@@ -89,60 +87,28 @@ const Vehicels = () => {
     {
       vehicle_image: bus,
       vehicle_name: "17 seater ac pushback bus",
-      image:[
-        
-          volvo1,
-          volvo1,
-          volvo1,
-          volvo1,
-          volvo1,
-        
-      ],
+      image: [volvo1, volvo1, volvo1, volvo1, volvo1],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: bus,
       vehicle_name: "20 seater ac pushback bus",
-      image:[
-        
-          volvo1,
-          volvo1,
-          volvo1,
-          volvo1,
-          volvo1,
-        
-      ],
+      image: [volvo1, volvo1, volvo1, volvo1, volvo1],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: bus,
       vehicle_name: "26 seater ac pushback bus",
-      image:[
-        
-          volvo1,
-          volvo1,
-          volvo1,
-          volvo1,
-          volvo1,
-        
-      ],
+      image: [volvo1, volvo1, volvo1, volvo1, volvo1],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: bus,
       vehicle_name: "45 Ac Volvo Eicher Bus",
-      image:[
-        
-          volvo1,
-          volvo2,
-          volvo3,
-          volvo4,
-          volvo5,
-        
-      ],
+      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
@@ -170,6 +136,24 @@ const Vehicels = () => {
               pagination={{
                 clickable: true,
               }}
+              breakpoints={{
+                300:{
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                900: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
               navigation={false}
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
@@ -195,10 +179,13 @@ const Vehicels = () => {
           </div>
 
           <div class="vehi-description">
-            <div class="image bg-img-cover"   >
-              <div class="vehicle_image bg-img-cover"  style={{backgroundImage:`url(${vehicledesc[data].vehicle_image})`}} >
-
-              </div>
+            <div class="image bg-img-cover">
+              <div
+                class="vehicle_image bg-img-cover"
+                style={{
+                  backgroundImage: `url(${vehicledesc[data].vehicle_image})`,
+                }}
+              ></div>
             </div>
             <div class="right-side">
               <h1>{vehicledesc[data].vehicle_name}</h1>
@@ -207,20 +194,16 @@ const Vehicels = () => {
           </div>
 
           <div className="vehicle_images">
-    {
-      vehicledesc[data].image.map((item, index) => (
-        <div
-          className="vehi_image bg-img-cover"
-          style={{ backgroundImage: `url(${item})` }}
-          key={index}
-        ></div>
-      ))
-    }
-  </div>
+              {vehicledesc[data].image.map((item, index) => (
+              <div
+                className="vehi_image bg-img-cover"
+                style={{ backgroundImage: `url(${item})` }}
+                key={index}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
-
-
     </>
   );
 };
