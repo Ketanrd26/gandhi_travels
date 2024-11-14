@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+<!-- Project Details  -->
+Project Pages - Home , About, Vehicles, Blog, Gallery, Contact 
+
+<!-- Header Componant -->
+In this header logo, menu and contact btn.
+first view header background is transparent but after scroll 60 pixcel background change in pure white color.
+
+<!-- Home Page  -->
+First Section- On home page first section We want to create a slider 4-5 images, Use Static content for this only changes background images. In this content structure is Heading, Subheading and two Buttons click on first btn go to contact page and click on second btn go to about us page. 
+
+Second Section- On this second section Add section Title in center. before this use bus image collage in left side and text for right side. (img - 250px 250px and text structure heading, desc and btn . btn go to about page).
+
+Third Section - In this section we want one section title in center. Before this use text for left side (Heading and desc). for right side we want to create four cards(on every card num, icon, heading and desc).
+
+Fourth Section - For this section we want a static background and on this background add card swiper(swiper card design - add image for bottom side use overlay and add text also add link for every card.)
+
+Fifth Section - For this section we need google reviews swipper. 
+
+<!-- Footer component -->
+  
