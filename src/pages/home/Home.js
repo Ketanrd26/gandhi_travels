@@ -47,8 +47,14 @@ const Home = () => {
       {/* Second Section */}
       <div className="home-about-parent parent">
         <div className="home-about-cont cont">
-          <h2>Lorem ipsum dolor sit amet.</h2>
-          
+          <h2>About Us</h2>
+          <div className="main-section">
+            <div className="left-box"></div>
+            <div className="right-box">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ducimus consequatur libero illo magni est temporibus eveniet harum exercitationem accusantium laborum itaque id ullam inventore a nulla debitis, aliquam quisquam explicabo ipsum quibusdam incidunt! Sapiente tempora magnam necessitatibus vero ab deserunt nisi, aut quaerat voluptatum nobis, ex molestias vel! Maxime!</p>
+              <div className="btn">Read More</div>
+            </div>
+          </div>
         </div>
       </div>
     </>

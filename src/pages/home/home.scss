@@ -1,6 +1,6 @@
-// First Section 
+// First Section
 .home-parent {
-    position: relative;
+  position: relative;
   p {
     color: red;
   }
@@ -19,12 +19,12 @@
     justify-content: center;
     align-items: center;
   }
-  .swiper-pagination-bullet{
+  .swiper-pagination-bullet {
     background-color: #ff00008f;
-    width:20px;
-    height:20px;
+    width: 20px;
+    height: 20px;
   }
-  
+
   .box {
     display: flex;
     align-items: center;
@@ -50,39 +50,67 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.459);
       }
-
-      
     }
- 
   }
-  .home-cont{
-    gap:10px;
+  .home-cont {
+    gap: 10px;
     position: absolute;
-    top:50%;
+    top: 50%;
     z-index: 2;
-    left:0;
-    width:100%;
+    left: 0;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    .home-heading{
-        font-size:60px;
-        color:white;
-        font-family: "Courgette", cursive;
-        
+    .home-heading {
+      font-size: 60px;
+      color: white;
+      font-family: "Courgette", cursive;
     }
-    .desc{
-        font-size: 20px;
-        color:var(--accent);
+    .desc {
+      font-size: 20px;
+      color: var(--accent);
     }
-    .btn-group{
-        display: flex;
-        gap:var(--unit);
+    .btn-group {
+      display: flex;
+      gap: var(--unit);
     }
-    
   }
-  
 }
 
 // Second Section
+.home-about-parent {
+  background-color: white;
+  .home-about-cont {
+    text-align: center;
+
+    padding: 50px 0px;
+    .main-section {
+      display: flex;
+      width: 100%;
+      padding: 20px 0px 0px 0px;
+      gap: var(--unit);
+      .left-box {
+        background: red;
+        border-radius: 10px;
+        height: 300px;
+        width: 50%;
+      }
+      .right-box {
+        width: 50%;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          text-align: left;
+        }
+        .btn {
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
