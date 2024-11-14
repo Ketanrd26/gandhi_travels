@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assests/logo.png";
+import black_logo from "../../assests/black_logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { RxCross1 } from "react-icons/rx";
 const Header = () => {
@@ -54,7 +55,7 @@ const Header = () => {
           <div class="logo">
           <Link to="/">
           
-          <img src={logo} alt="" /></Link>
+          <img src={!scrolled ? logo : black_logo} alt="" /></Link>
           </div>
           <div class="nav-list">
             {NavLinks.map((item, index) => (

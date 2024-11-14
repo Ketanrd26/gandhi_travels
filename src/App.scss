@@ -132,3 +132,14 @@ a {
     color: var(--accent);
   }
 }
+
+
+
+.swiper-pagination-bullet-active{
+  background-color: var(--accent) !important;
+
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--accent) !important;
+}

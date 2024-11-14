@@ -130,7 +130,7 @@ const Vehicels = () => {
               spaceBetween={30}
               centeredSlides={false}
               autoplay={{
-                delay: 2500,
+                delay: 25000000,
                 disableOnInteraction: false,
               }}
               pagination={{
