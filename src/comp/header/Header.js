@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
 import logo from "../../assests/logo.png";
@@ -26,9 +26,21 @@ const Header = () => {
 
   const [scrolled, setScrolled] = useState(false);
 
-  if (window.scrollY > 80) {
-    setScrolled(true);
-  }
+  useEffect(() => {
+    const scrollnav = () => {
+      if (window.scrollY > 80) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    document.addEventListener("scroll", scrollnav);
+
+    return () => {
+      document.removeEventListener("scroll", scrollnav);
+    };
+  }, []);
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (
@@ -40,7 +52,9 @@ const Header = () => {
       >
         <div class="header-cont cont">
           <div class="logo">
-            <img src={logo} alt="" />
+          <Link to="/">
+          
+          <img src={logo} alt="" /></Link>
           </div>
           <div class="nav-list">
             {NavLinks.map((item, index) => (
@@ -60,24 +74,22 @@ const Header = () => {
           </div>
         </div>
       </div>
-   {mobileNavOpen &&
-       <div class="mobile-nav parent">
-       <div class="overlay-nav parent">
-         <div class="mobile-nav-cont cont">
-          {
-           NavLinks.map((item,index)=>(
-               <Link to={item.link_path} className="link" key={index} >
-         {  item.link_name}
-               </Link>
-           ))
-          }
-           <Link to="/contact" className="btn">
-             Contact us
-           </Link>
-         </div>
-       </div>
-     </div>
-   }
+      {mobileNavOpen && (
+        <div class="mobile-nav parent">
+          <div class="overlay-nav parent">
+            <div class="mobile-nav-cont cont">
+              {NavLinks.map((item, index) => (
+                <Link to={item.link_path} className="link" key={index}>
+                  {item.link_name}
+                </Link>
+              ))}
+              <Link to="/contact" className="btn">
+                Contact us
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

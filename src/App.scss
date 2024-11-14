@@ -2,7 +2,7 @@
   --black: #000;
   --white: #ffffff;
   --white2: rgb(245, 245, 240);
-  --accent:#ff0000;
+  --accent: #ff0000;
   // figma color codes
   --max-width: 1200px;
   // other colors
@@ -40,7 +40,7 @@ body {
   min-height: 100svh;
   width: 100svw;
   background: var(--white2);
-  p{
+  p {
     font-size: 22px;
   }
 }
@@ -64,19 +64,18 @@ html {
 a {
   text-decoration: none;
   cursor: pointer;
-
 }
 
 .parent {
-    width: 100%;
-  
-    .cont {
-      max-width: var(--max-width);
-      margin: auto;
-      padding: 0px 10px;
-      height: 100%;
-    }
+  width: 100%;
+
+  .cont {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0px 10px;
+    height: 100%;
   }
+}
 
 .bg-img-cover {
   background-position: center;
@@ -102,8 +101,8 @@ a {
   font-size: var(--unit);
   font-weight: 500;
   transition: var(--trans-m);
-
-  &:hover{
+  cursor: pointer;
+  &:hover {
     background-color: var(--accent);
     color: var(--white);
   }
@@ -113,17 +112,15 @@ a {
   padding: calc(var(--unit) / 2) var(--unit);
   border-radius: 25px;
   border: 1px solid var(--accent);
-  
+
   font-size: var(--unit);
   font-weight: 500;
   transition: var(--trans-m);
   background-color: var(--accent);
   color: var(--white);
-
-  &:hover{
+  cursor: pointer;
+  &:hover {
     background-color: transparent;
     color: var(--accent);
   }
 }
-
-
