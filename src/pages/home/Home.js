@@ -31,7 +31,7 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <div className="home-cont">
-            <h1 className="home-heading">Gandhi's Travels</h1>
+            <h1 className="home-heading heading">Gandhi's Travels</h1>
             <div className="desc">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
               nulla dolor aliquid consectetur!
