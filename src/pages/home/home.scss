@@ -121,12 +121,14 @@
     padding:50px 0px;
     h2{
       text-align: center;
+      margin-bottom:30px;
     }
     .fac-box{
       display:flex;
       align-items: center;
       justify-content: center;
       display:flex;
+      gap:calc(var(--unit)*2);
 
       .left-fac{
         width:50%;
@@ -146,13 +148,31 @@
           .box1 ,.box2,.box3,.box4{
             background-color: white;
             border-radius: 10px;
-            padding:10px;
+            padding:20px 10px;
+            gap:calc(var(--unit)/2);
             display:flex;
             flex-direction: column;
             .card-head{
               display:flex;
               flex-direction: row;
               justify-content: space-between;
+              .number{
+                font-size:16px;
+                background:red;
+                border-radius: 50%;
+                padding:5px;
+                height:30px;
+                width:30px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+              }
+              .icon{
+                
+                svg{
+                  color:red;
+                }
+              }
             }
           }
         }

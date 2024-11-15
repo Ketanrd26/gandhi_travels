@@ -4,7 +4,7 @@ import "./home.scss";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css";
-
+import { GoPackage } from "react-icons/go";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 const Home = () => {
   return (
@@ -73,7 +73,7 @@ const Home = () => {
               <div className="box1">
                 <div className="card-head">
                   <div className="number">1</div>
-                  <div className="icon">ad</div>
+                  <div className="icon"><GoPackage /></div>
                 </div>
                 <h5>Lorem, ipsum dolor.</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
@@ -81,7 +81,7 @@ const Home = () => {
               <div className="box2">
               <div className="card-head">
                   <div className="number">1</div>
-                  <div className="icon">ad</div>
+                  <div className="icon"><GoPackage /></div>
                 </div>
                 <h5>Lorem, ipsum dolor.</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
@@ -91,7 +91,7 @@ const Home = () => {
             <div className="box3">
               <div className="card-head">
                   <div className="number">1</div>
-                  <div className="icon">ad</div>
+                  <div className="icon"><GoPackage /></div>
                 </div>
                 <h5>Lorem, ipsum dolor.</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
@@ -99,7 +99,7 @@ const Home = () => {
               <div className="box4">
               <div className="card-head">
                   <div className="number">1</div>
-                  <div className="icon">ad</div>
+                  <div className="icon"><GoPackage /></div>
                 </div>
                 <h5>Lorem, ipsum dolor.</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
