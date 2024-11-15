@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./vehicel.scss";
 import Pagetop from "../../comp/pagetop/Pagetop";
 
@@ -116,7 +116,16 @@ const Vehicels = () => {
   const [data, setData] = useState(0);
   const dataMapping = (index) => {
     setData(index);
+
+      
+
+
+   
+
   };
+
+
+
 
   return (
     <>
@@ -137,7 +146,7 @@ const Vehicels = () => {
                 clickable: true,
               }}
               breakpoints={{
-                300:{
+                300: {
                   slidesPerView: 1,
                   spaceBetween: 20,
                 },
@@ -165,20 +174,20 @@ const Vehicels = () => {
                   }
                   onClick={() => dataMapping(index)}
                 >
-                  <div class="vehicle" key={index}>
+                  <a class="vehicle" href="#data" key={index}>
                     <img
                       src={data === index ? item.image2 : item.image1}
                       alt=""
                     />
 
                     <p>{item.vehicle_name}</p>
-                  </div>
+                  </a>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
-
-          <div class="vehi-description">
+<div class="blank-div" id="data"></div>
+          <div class="vehi-description" >
             <div class="image bg-img-cover">
               <div
                 class="vehicle_image bg-img-cover"
@@ -194,7 +203,7 @@ const Vehicels = () => {
           </div>
 
           <div className="vehicle_images">
-              {vehicledesc[data].image.map((item, index) => (
+            {vehicledesc[data].image.map((item, index) => (
               <div
                 className="vehi_image bg-img-cover"
                 style={{ backgroundImage: `url(${item})` }}

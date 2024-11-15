@@ -53,6 +53,10 @@
             color: var(--accent);
           }
         }
+
+        &:hover{
+          background-color: rgba(188, 188, 188, 0.315);
+        }
       }
     }
 
