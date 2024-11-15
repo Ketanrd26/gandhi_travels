@@ -114,3 +114,53 @@
     }
   }
 }
+
+// Third Section
+.home-fac-parent{
+  .home-fact-cont{
+    padding:50px 0px;
+    h2{
+      text-align: center;
+    }
+    .fac-box{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      display:flex;
+
+      .left-fac{
+        width:50%;
+        display:flex;
+        flex-direction: column;
+        
+      }
+      .right-fac{
+        width:50%;
+        display:flex;
+        gap:var(--unit);
+        .left-box,.right-box{
+          width:50%;
+          display: flex;
+          flex-direction: column;
+          gap:var(--unit);
+          .box1 ,.box2,.box3,.box4{
+            background-color: white;
+            border-radius: 10px;
+            padding:10px;
+            display:flex;
+            flex-direction: column;
+            .card-head{
+              display:flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+          }
+        }
+        .right-box{
+          margin-top:100px;
+          
+        }
+      }
+    }
+  }
+}

@@ -57,6 +57,58 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Third Section */}
+      <div className="home-fac-parent parent">
+        <div className="home-fact-cont cont">
+          <h2>Facilities</h2>
+          <div className="fac-box">
+            <div className="left-fac">
+              <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam id labore dolore delectus reiciendis! Adipisci animi odio cupiditate minus laborum?</p>
+            </div>
+            
+            <div className="right-fac">
+            <div className="left-box">
+              <div className="box1">
+                <div className="card-head">
+                  <div className="number">1</div>
+                  <div className="icon">ad</div>
+                </div>
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
+              </div>
+              <div className="box2">
+              <div className="card-head">
+                  <div className="number">1</div>
+                  <div className="icon">ad</div>
+                </div>
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
+              </div>
+            </div>
+            <div className="right-box">
+            <div className="box3">
+              <div className="card-head">
+                  <div className="number">1</div>
+                  <div className="icon">ad</div>
+                </div>
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
+              </div>
+              <div className="box4">
+              <div className="card-head">
+                  <div className="number">1</div>
+                  <div className="icon">ad</div>
+                </div>
+                <h5>Lorem, ipsum dolor.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sed.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
