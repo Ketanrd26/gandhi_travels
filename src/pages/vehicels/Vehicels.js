@@ -129,7 +129,7 @@ const Vehicels = () => {
 
   return (
     <>
-      <Pagetop />
+      <Pagetop pagetop_text="Vehicels" />
 
       <div class="vehicle-desc-parent parent">
         <div class="vehicle-desc-cont cont">

@@ -80,7 +80,7 @@ const Header = () => {
           <div class="overlay-nav parent">
             <div class="mobile-nav-cont cont">
               {NavLinks.map((item, index) => (
-                <Link to={item.link_path} className="link" key={index}>
+                <Link to={item.link_path} onClick={()=>setMobileNavOpen(false)} className="link" key={index}>
                   {item.link_name}
                 </Link>
               ))}
