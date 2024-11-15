@@ -4,7 +4,7 @@
   background-color: transparent;
   position: fixed;
   z-index: 99;
-
+transition: var(--trans-m);
   
   &.active {
     background-color: var(--white);

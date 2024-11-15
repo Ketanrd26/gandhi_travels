@@ -148,6 +148,7 @@
   .vehicle-desc-parent {
     .vehicle-desc-cont {
       .vehicle_images {
+        height: auto;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
 
