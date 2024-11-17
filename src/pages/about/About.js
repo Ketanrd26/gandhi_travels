@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./about.scss";
 import Pagetop from "../../comp/pagetop/Pagetop";
 import founder_img from "../../assests/dummy_img.png";
+import { IoIosArrowDown } from "react-icons/io";
 import { GoGoal } from "react-icons/go";
 const About = () => {
   const vismis_data = [
@@ -18,6 +19,41 @@ const About = () => {
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione nemo pariatur placeat blanditiis perspiciatis voluptas ipsam magnam hic facilis explicabo sit,",
     },
   ];
+
+
+  const [faq, setFaq] = useState(null);
+
+  const faqContent = [
+    {
+      title: "How much will it cost?",
+      content:
+        "Price depends on size, detail, and how long the session takes. Smaller pieces usually start at a set minimum, and larger or more detailed ones can go up from there. We can give you an estimate when you show us the design and placement!",
+    },
+    {
+      title: "How should I prepare for my tattoo appointment?",
+      content:
+        "Definitely eat a good meal beforehand so you don’t feel lightheaded. Stay hydrated, and wear something comfortable that gives easy access to the area we’re tattooing. Also, bring good vibes – it’ll make the session way more fun!",
+    },
+    {
+      title: "How do I decide on tattoo placement?",
+      content:
+        "Placement is key! Think about how visible you want it to be and how the design fits with your body. Some spots are more painful, but if you’re unsure, we can suggest areas that work well with your chosen design.",
+    },
+    {
+      title: "How do I choose the right design?",
+      content:
+        "Choosing a design is all about what feels right to you. If it’s your first tattoo, you might want something meaningful or simple to start with. We can also brainstorm together if you have an idea but aren’t sure. Bringing in reference photos helps too!",
+    },
+    {
+      title: "Can I get a tattoo cover-up, and how does it work?",
+      content:
+        "Yes, you can! Tattoo cover-ups involve designing a new piece to effectively conceal your old tattoo. We often use darker colors or intricate designs to ensure a seamless blend. Just stop by for a consultation, and we’ll help you create a cover-up that looks fantastic!",
+    },
+  ];
+  const handleToggle = (index) => {
+    // If the clicked index is already open, close it; otherwise, open the new one.
+    setFaq(faq === index ? null : index);
+  };
   return (
     <>
        <Pagetop pagetop_text="About Gandhi's Travels" />
@@ -76,6 +112,42 @@ const About = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+
+      
+      <div className="faq-parent parent">
+        <div
+          className="faq-cont cont"
+          data-aos="fade-up"
+          data-aos-delay="700"
+          data-aos-duration="1000"
+        >
+          <div className="left "></div>
+
+          <div className="right">
+            <h5>Faq</h5>
+            <p>
+             Frequently Asked Questions
+            </p>
+
+            <div className="faq-list">
+              {faqContent.map((item, index) => (
+                <div className="faq" key={index}>
+                  <div className={faq === index ? "heading active" : "heading"} onClick={() => handleToggle(index)}>
+                    <p>{item.title}</p>
+                    <div className={faq === index ? "icon active" : "icon"}>
+                      <IoIosArrowDown />
+                    </div>
+                  </div>
+                  <div className={faq === index ? "content active" : "content"}>
+                    <p>{item.content}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </>
