@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/autoplay";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-// import required modules
 import { Navigation, Autoplay } from "swiper/modules";
 import "./testimonial.scss";
 
 const Testimonial = () => {
-    const swiperRef = useRef(null);
-  // Sample image data array (you can replace with your actual image paths and data)
+  const swiperRef = useRef(null);
+
+  // Sample image data array (replace with your actual data)
   const images = [
     {
       id: 1,
@@ -41,26 +40,31 @@ const Testimonial = () => {
     },
   ];
 
+  // Handle mouse enter to stop autoplay
+  const handleMouseEnter = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.autoplay.stop();
+    }
+  };
 
-    // Handle mouse enter to stop autoplay
-    const handleMouseEnter = () => {
-        if (swiperRef.current) {
-          swiperRef.current.swiper.autoplay.stop();
-        }
-      };
-    
-      // Handle mouse leave to start autoplay
-      const handleMouseLeave = () => {
-        if (swiperRef.current) {
-          swiperRef.current.swiper.autoplay.start();
-        }
-      };
+  // Handle mouse leave to start autoplay
+  const handleMouseLeave = () => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.autoplay.start();
+    }
+  };
+
   return (
-    <div className="testimonial-parent parent">
+    <div
+      className="testimonial-parent parent"
+      onMouseEnter={handleMouseEnter} // Add mouse enter to stop autoplay
+      onMouseLeave={handleMouseLeave} // Add mouse leave to start autoplay
+    >
       <div className="testimonial-cont cont">
         <Swiper
+          ref={swiperRef} // Reference for controlling autoplay
           navigation={false}
-          modules={[Navigation , Autoplay]}
+          modules={[Navigation, Autoplay]}
           autoplay={{
             delay: 2500, // Delay between slides in milliseconds
             disableOnInteraction: false, // Prevent disabling autoplay after user interaction
