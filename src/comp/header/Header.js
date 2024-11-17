@@ -23,6 +23,7 @@ const Header = () => {
       link_name: "Blogs",
       link_path: "/blogs",
     },
+   
   ];
 
   const [scrolled, setScrolled] = useState(false);
@@ -63,7 +64,7 @@ const Header = () => {
                 {item.link_name}
               </Link>
             ))}
-            <Link to="/contact" className="btn">
+            <Link to="/contactus" className="btn">
               Contact us
             </Link>
           </div>
@@ -84,7 +85,7 @@ const Header = () => {
                   {item.link_name}
                 </Link>
               ))}
-              <Link to="/contact" className="btn">
+              <Link to="/contactus" className="btn">
                 Contact us
               </Link>
             </div>
