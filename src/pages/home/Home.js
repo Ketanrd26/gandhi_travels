@@ -151,9 +151,16 @@ const Home = () => {
           <Cardswiper />
         </div>
       </div>
+
+      {/* Fifth Section */}
       <div className="fifth-section-parent parent">
+        <div className="overlay"></div>
         <div className="fifth-section-cont cont">
+          <h2>Lorem ipsum dolor sit amet<span> consectetur.</span> </h2>
+          <div className="test">
           <Testimonial />
+          </div>
+         
         </div>
       </div>
     </>
