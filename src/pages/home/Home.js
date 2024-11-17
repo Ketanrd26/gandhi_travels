@@ -111,9 +111,10 @@ const Home = () => {
         </div>
       </div>
       {/* Forth Section */}
-      <div className="forth-sec-parent parent">
+      <div className="forth-sec-parent bg-img-cover parent">
+      <h2>Lorem, ipsum dolor.</h2>
         <div className="forth-sec-cont cont">
-          <h2>Lorem, ipsum dolor.</h2>
+         
           <div className="box">
             <Cardswiper />
 

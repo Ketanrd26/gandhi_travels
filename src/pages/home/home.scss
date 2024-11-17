@@ -116,83 +116,102 @@
 }
 
 // Third Section
-.home-fac-parent{
-  .home-fact-cont{
-    padding:50px 0px;
-    h2{
+.home-fac-parent {
+  .home-fact-cont {
+    padding: 50px 0px;
+    h2 {
       text-align: center;
-      margin-bottom:30px;
+      margin-bottom: 30px;
     }
-    .fac-box{
-      display:flex;
+    .fac-box {
+      display: flex;
       align-items: center;
       justify-content: center;
-      display:flex;
-      gap:calc(var(--unit)*2);
+      display: flex;
+      gap: calc(var(--unit) * 2);
 
-      .left-fac{
-        width:50%;
-        display:flex;
+      .left-fac {
+        width: 50%;
+        display: flex;
         flex-direction: column;
-        
       }
-      .right-fac{
-        width:50%;
-        display:flex;
-        gap:var(--unit);
-        .left-box,.right-box{
-          width:50%;
+      .right-fac {
+        width: 50%;
+        display: flex;
+        gap: var(--unit);
+        .left-box,
+        .right-box {
+          width: 50%;
           display: flex;
           flex-direction: column;
-          gap:var(--unit);
-          .box1 ,.box2,.box3,.box4{
+          gap: var(--unit);
+          .box1,
+          .box2,
+          .box3,
+          .box4 {
             background-color: white;
             border-radius: 10px;
-            padding:20px 10px;
-            gap:calc(var(--unit)/2);
-            display:flex;
+            padding: 20px 10px;
+            gap: calc(var(--unit) / 2);
+            display: flex;
             flex-direction: column;
-            .card-head{
-              display:flex;
+            .card-head {
+              display: flex;
               flex-direction: row;
               justify-content: space-between;
-              .number{
-                font-size:16px;
-                background:red;
+              .number {
+                font-size: 16px;
+                background: red;
                 border-radius: 50%;
-                padding:5px;
-                height:30px;
-                width:30px;
-                display:flex;
+                padding: 5px;
+                height: 30px;
+                width: 30px;
+                display: flex;
                 align-items: center;
                 justify-content: center;
               }
-              .icon{
-                
-                svg{
-                  color:red;
+              .icon {
+                svg {
+                  color: red;
                 }
               }
             }
           }
         }
-        .right-box{
-          margin-top:100px;
-          
+        .right-box {
+          margin-top: 100px;
         }
       }
     }
   }
 }
 
-// Forth Section 
+// Forth Section
 
-.forth-sec-parent{
-  background:red;
-  .forth-sec-cont{
-    padding:50px 0px;
-    h2{
-      text-align: center;
+.forth-sec-parent {
+  margin: 0px 0px 250px 0px;
+  background: url("https://img.freepik.com/free-photo/woman-with-medical-mask-using-public-bus-transportation_23-2149043009.jpg?t=st=1731841092~exp=1731844692~hmac=d4910d36528fdcd66d6d0c41d6c431cc80103801f8c970262219fc27cb477121&w=740");
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  h2 {
+    text-align: center;
+  }
+  .forth-sec-cont {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+    z-index: 5;
+    width: 100%;
+    border: 1px solid red;
+
+    
+    
+    .box {
+      
     }
   }
 }
