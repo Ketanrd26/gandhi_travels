@@ -7,6 +7,7 @@ import "swiper/css";
 import { GoPackage } from "react-icons/go";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import Cardswiper from "../../comp/Home/Cardswiper";
+import Testimonial from "../../comp/Home/Testimonial";
 const Home = () => {
   return (
     <>
@@ -148,6 +149,11 @@ const Home = () => {
         <h2>Lorem, ipsum dolor.</h2>
         <div className="forth-sec-cont cont">
           <Cardswiper />
+        </div>
+      </div>
+      <div className="fifth-section-parent parent">
+        <div className="fifth-section-cont cont">
+          <Testimonial />
         </div>
       </div>
     </>

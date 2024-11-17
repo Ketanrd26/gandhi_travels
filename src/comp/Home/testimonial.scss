@@ -1,0 +1,22 @@
+.card-main-box {
+    display: flex;
+    gap:10px;
+    .left-card,
+    .middle-card,
+    .right-card {
+      display: flex;
+      height: 500px;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      .top,
+      .bottom {
+        background: yellow;
+        width:100%;
+        height: 250px;
+        border-radius: 10px;
+      }
+    }
+  }
+  
+   
