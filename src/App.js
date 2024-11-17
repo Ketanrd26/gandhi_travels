@@ -7,6 +7,7 @@ import Footer from "./comp/footer/Footer";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Blog from "./pages/blog/Blog";
+import BlogDetailPage from "./pages/blogdetails/BlogDetail";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vehicels" element={<Vehicels />} />
           <Route path="/blogs" element={<Blog />} />
+          <Route path="/blogs/:id" element={<BlogDetailPage/>} />
           <Route path="/contactus" element={<Contact />} />
 
         </Routes>
