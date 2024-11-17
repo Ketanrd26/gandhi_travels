@@ -78,6 +78,7 @@
     .footer-cont {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      gap: calc(var(--unit)*2) !important;
 
       .gandhi-about {
         width: 100% !important;

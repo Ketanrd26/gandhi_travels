@@ -37,9 +37,10 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   min-height: 100svh;
-  width: 100svw;
+  // width: 100svw;
+  width: 100%;
   background: var(--white2);
   p {
     font-size: 16px;

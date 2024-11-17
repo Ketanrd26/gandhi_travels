@@ -182,4 +182,24 @@
       }
     }
   }
+
+
+  .mission-vision{
+    .misvis-cont{
+      flex-direction: column;
+
+      gap: var(--unit);
+    }
+  }
+}
+
+@media screen and (max-width :450px) {
+  .mission-vision{
+    .misvis-cont{
+      padding: 0px 20px;
+      .vismis_card{
+        width: 100% !important;
+      }
+    }
+  }
 }

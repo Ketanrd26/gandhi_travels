@@ -20,7 +20,7 @@ const About = () => {
   ];
   return (
     <>
-      <Pagetop pagetop_text="About Gandhi's Travels" />
+       <Pagetop pagetop_text="About Gandhi's Travels" />
 
       <div class="about-parent parent">
         <div class="about-cont cont">
