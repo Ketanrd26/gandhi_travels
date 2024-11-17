@@ -1,5 +1,4 @@
 .nsbox {
-
   .card {
     border-radius: 10px;
     width: 100%;
@@ -7,38 +6,40 @@
     box-shadow: var(--shadow);
     position: relative;
     .card-img {
-      width:100%;
-      height:100%;
+      width: 100%;
+      height: 100%;
 
       border-radius: 10px;
       .overlay {
         position: absolute;
         width: 100%;
         height: 100%;
-        background:linear-gradient(#0000, 75%, #010211);;
+        background: linear-gradient(#0000, 75%, #010211);
         border-radius: 10px;
+        &:hover {
+          background: linear-gradient(to bottom, transparent, var(--accent));
+        }
       }
-      h4{
-        position:absolute;
-        bottom:10px;
-        display:flex;
+      h4 {
+        position: absolute;
+        bottom: 10px;
+        display: flex;
         align-items: center;
         justify-content: center;
-        width:100%;
-        color:white;
+        width: 100%;
+        color: white;
         z-index: 2;
       }
     }
   }
 }
-.swiper-pagination{
-    bottom: -20px !important;
+.swiper-pagination {
+  bottom: -20px !important;
 
-    height: 60px;
-    position: relative;
-    .swiper-pagination-bullet{
-        width:15px;
-        height: 15px;
-        background:green !important;
-    }
+  height: 60px;
+  position: relative;
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+  }
 }

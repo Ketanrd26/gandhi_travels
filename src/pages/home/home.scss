@@ -189,29 +189,35 @@
 // Forth Section
 
 .forth-sec-parent {
-  margin: 0px 0px 250px 0px;
+  margin: 0px 0px 300px 0px;
   background: url("https://img.freepik.com/free-photo/woman-with-medical-mask-using-public-bus-transportation_23-2149043009.jpg?t=st=1731841092~exp=1731844692~hmac=d4910d36528fdcd66d6d0c41d6c431cc80103801f8c970262219fc27cb477121&w=740");
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 400px;
+  .overlay{
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.575);
+  }
   h2 {
     text-align: center;
+    color:white;
+    position: absolute;
+    z-index: 2;
   }
   .forth-sec-cont {
     position: absolute;
     top: 120%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centers the element */
+    transform: translate(-50%, -50%);
     z-index: 5;
     width: 100%;
-    border: 1px solid red;
 
     
     
-    .box {
-      
-    }
+
   }
 }
