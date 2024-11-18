@@ -69,6 +69,14 @@
     .desc {
       font-size: 20px;
       color: var(--accent);
+      text-align: center;
+      width:100%;
+      @media only screen and (max-width:900px){
+        text-align: center;
+      }
+       @media only screen and (max-width:500px){
+       font-size:16px;
+      }
     }
     .btn-group {
       display: flex;
@@ -107,6 +115,27 @@
         }
         .btn {
           width: fit-content;
+        }
+      }
+    }
+    @media only screen and (max-width:1200px){
+      .main-section{
+        padding:0px 20px;
+      }
+      @media only screen and (max-width:900px){
+        .main-section{
+          display: flex;
+          flex-direction: column;
+          .left-box,.right-box{
+            width:100%;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            p{
+              text-align: center;
+            }
+            
+          }
         }
       }
     }
@@ -179,6 +208,34 @@
         }
         .right-box {
           margin-top: 100px;
+        }
+      }
+    }
+    @media only screen and (max-width:1200px){
+      .fac-box{
+        padding:0px 20px;
+      }
+    }
+    @media only screen and (max-width:900px){
+      .fac-box{
+        flex-direction: column;
+        .left-fac,.right-fac{
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    @media only screen and (max-width:700px){
+      .fac-box{
+        .right-fac{
+          display: flex;
+          flex-direction: column;
+          .left-box,.right-box{
+            width: 100%;
+          }
+          .right-box{
+            margin-top: 0px;
+          }
         }
       }
     }
