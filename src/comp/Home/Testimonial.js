@@ -63,12 +63,14 @@ const Testimonial = () => {
       <div className="testimonial-cont cont">
         <Swiper
           ref={swiperRef} // Reference for controlling autoplay
-          navigation={false}
+          navigation={true}
+          loop={true} 
           modules={[Navigation, Autoplay]}
           autoplay={{
             delay: 2500, // Delay between slides in milliseconds
             disableOnInteraction: false, // Prevent disabling autoplay after user interaction
           }}
+          
           className="mySwiper"
         >
           {images.map((image) => (

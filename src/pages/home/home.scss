@@ -192,6 +192,7 @@
                 background: red;
                 border-radius: 50%;
                 padding: 5px;
+                color:white;
                 height: 30px;
                 width: 30px;
                 display: flex;
@@ -271,6 +272,16 @@
     transform: translate(-50%, -50%);
     z-index: 5;
     width: 100%;
+    .swiper-pagination {
+      bottom: -20px !important;
+    
+      height: 60px;
+      position: relative;
+      .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+      }
+    }
   }
 }
 // Fifth Section
@@ -291,6 +302,7 @@ border: 2px solid rgb(252, 8, 8);
       text-align: center;
       position: absolute;
       left: 50%;
+      width:100%;
       transform: translate(-50%, -50%);
       color:white;
       span {
