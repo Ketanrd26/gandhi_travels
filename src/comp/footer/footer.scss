@@ -1,5 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap");
 
+.before_footer {
+  height: auto;
+  width: 100%;
+  // // height: 100svh;
+  height: 500px;
+
+  .before_footer_cont {
+    position: relative;
+padding: 0px 20px;
+    .video-section{
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      position: absolute;
+     left: 50%;
+     bottom: -10%;
+     transform: translateX(-50%);
+      // z-index: 9999999;
+      border-radius: var(--unit);
+    }
+  }
+}
 
 .footer-parent {
   width: 100%;
@@ -53,7 +75,7 @@
         font-family: "Aguafina Script", cursive;
         font-weight: 400;
         color: var(--accent);
-        font-size: calc(var(--unit)*2) ;
+        font-size: calc(var(--unit) * 2);
       }
       .social_icons {
         width: 100%;
@@ -78,11 +100,10 @@
     .footer-cont {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      gap: calc(var(--unit)*2) !important;
+      gap: calc(var(--unit) * 2) !important;
 
       .gandhi-about {
         width: 100% !important;
-    
       }
     }
   }
@@ -101,9 +122,8 @@
     .footer-cont {
       .gandhi-about {
         p {
-
-            width: auto;
-            height: fit-content !important;
+          width: auto;
+          height: fit-content !important;
         }
       }
     }

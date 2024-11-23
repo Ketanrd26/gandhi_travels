@@ -23,6 +23,11 @@ const Footer = () => {
   ];
   return (
     <>
+      <div class="before_footer parent">
+        <div class="before_footer_cont cont">
+          <div class="video-section"></div>
+        </div>
+      </div>
       <div class="footer-parent parent">
         <div class="footer-cont cont">
           <div class="gandhi-about">
@@ -34,31 +39,23 @@ const Footer = () => {
             </p>
           </div>
           <div class="nav-links">
-            {
-                NavLinks.map((item,index)=>(
-                    <Link  to={item.link_path}  key={index}>
-                    {item.link_name}
-                    </Link>
-                ))
-            }
+            {NavLinks.map((item, index) => (
+              <Link to={item.link_path} key={index}>
+                {item.link_name}
+              </Link>
+            ))}
           </div>
           <div class="privacy">
-            <Link>
-            Privacy Policies
-            </Link>
-            <Link>
-           Cookies Policy
-            </Link>
+            <Link>Privacy Policies</Link>
+            <Link>Cookies Policy</Link>
           </div>
           <div class="last">
-            <h4>
-                Get in touch
-            </h4>
+            <h4>Get in touch</h4>
             <div class="social_icons">
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
-                <div class="icons"></div>
+              <div class="icons"></div>
+              <div class="icons"></div>
+              <div class="icons"></div>
+              <div class="icons"></div>
             </div>
           </div>
         </div>
