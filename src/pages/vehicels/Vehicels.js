@@ -30,6 +30,11 @@ import volvo5 from "../../assests/vehicles/vovlo/image_5.jpg";
 
 // luxury urbania
 import luxury_urbania_hero from "../../assests/vehicles/luxary_urbania/luxary_urbania.jpg";
+import urb1 from "../../assests/vehicles/luxary_urbania/urb_1.webp"
+import urb2 from "../../assests/vehicles/luxary_urbania/urb_2.webp"
+import urb3 from "../../assests/vehicles/luxary_urbania/urb_3.webp"
+import urb4 from "../../assests/vehicles/luxary_urbania/urb_4.webp"
+import urb5 from "../../assests/vehicles/luxary_urbania/urb_5.webp"
 
 // kia sonnet
 
@@ -37,22 +42,48 @@ import luxury_urbania_hero from "../../assests/vehicles/luxary_urbania/luxary_ur
 // kia carnes
 
 import kia_carnes_suv_hero from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
+import kia_car_1 from "../../assests/vehicles/kia_carnes/kia_carnes_1.webp"
+import kia_car_2 from "../../assests/vehicles/kia_carnes/kia_car_2.webp"
+import kia_car_3 from "../../assests/vehicles/kia_carnes/kia_car_3.webp"
+import kia_car_4 from "../../assests/vehicles/kia_carnes/kia_car_4.webp"
+import kia_car_5 from "../../assests/vehicles/kia_carnes/kia_car_5.webp"
 
 // innova crysta
 
 import innova_crysta_hero from "../../assests/vehicles/innova_crysta/innova_cryst.jpg";
+import innova1 from "../../assests/vehicles/innova_crysta/innova_1.webp"
+import innova2 from "../../assests/vehicles/innova_crysta/innova_2.webp"
+import innova3 from "../../assests/vehicles/innova_crysta/innova_3.webp"
+import innova4 from "../../assests/vehicles/innova_crysta/innova_4.webp"
 
 // 35 ac bhartbenz
 import bhartbenz_hero from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
+import bt1 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_1.webp"
+import bt2 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_2.webp"
+import bt3 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_3.webp"
+import bt4 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_4.webp"
 
 // 26 seater pushback
 import modified_luxury from "../../assests/vehicles/26_s_modifeid_pushback/26_s_m_pushback.jpg";
-
+import ml1 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_1.webp"
+import ml2 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_2.webp"
+import ml3 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_3.webp"
+import ml4 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_4.webp"
+import ml5 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_5.webp"
 // 20 seater ac pushback
 import seater_ac_hero from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
-
+import sp1 from "../../assests/vehicles/20_s_pushback/20_s_1.webp"
+import sp2 from "../../assests/vehicles/20_s_pushback/20_s_2.webp"
+import sp3 from "../../assests/vehicles/20_s_pushback/20_s_3.webp"
+import sp4 from "../../assests/vehicles/20_s_pushback/20_s_4.webp"
+import sp5 from "../../assests/vehicles/20_s_pushback/20_s_5.webp"
 // 17 seater ac pushback
 import seater_bus_hero from "../../assests/vehicles/17_s_pushback/17_SEATER_pushback.webp";
+import sb1 from "../../assests/vehicles/17_s_pushback/17_s_1.webp"
+import sb2 from "../../assests/vehicles/17_s_pushback/17_s_2.webp"
+import sb3 from "../../assests/vehicles/17_s_pushback/17_s_3.webp"
+import sb4 from "../../assests/vehicles/17_s_pushback/17_s_4.webp"
+import sb5 from "../../assests/vehicles/17_s_pushback/17_S_5.webp"
 
 const Vehicels = () => {
   const vehicelsHeading = [
@@ -131,7 +162,7 @@ const Vehicels = () => {
     {
       vehicle_image: luxury_urbania_hero,
       vehicle_name: "Luxury Urbania",
-      image: [volvo1, volvo1, volvo1, volvo1, volvo1],
+      image: [urb1, urb2, urb3, urb4, urb5],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
@@ -145,14 +176,14 @@ const Vehicels = () => {
     {
       vehicle_image: kia_carnes_suv_hero,
       vehicle_name: "Kia Carnes SUV",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      image: [kia_car_1, kia_car_2, kia_car_3, kia_car_4, kia_car_5],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: innova_crysta_hero,
       vehicle_name: "Innova Crysta",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      image: [innova1, innova2, innova3, innova4, innova_crysta_hero],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
@@ -166,28 +197,28 @@ const Vehicels = () => {
     {
       vehicle_image: bhartbenz_hero,
       vehicle_name: "35 AC Bharatbenz",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      image: [bt1, bt2, bt3, bt4, bhartbenz_hero],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: modified_luxury,
       vehicle_name: "26 Seater modifeid luxury",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      image: [ml1, ml2, ml3, ml4, ml5],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: seater_ac_hero,
       vehicle_name: "20 seater Ac Pushback Bus",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      image: [sp1, sp2, sp3, sp4, sp5],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
     {
       vehicle_image: seater_bus_hero,
       vehicle_name: "17 Seater Ac Pushback Bus",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      image: [sb1, sb2, sb3, sb4, sb5],
       vehicle_desc:
         "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
     },
@@ -207,6 +238,7 @@ const Vehicels = () => {
             <Swiper
               slidesPerView={4}
               spaceBetween={30}
+              loop={true}
               centeredSlides={false}
               autoplay={{
                 delay: 2500,
