@@ -8,12 +8,13 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Blog from "./pages/blog/Blog";
 import BlogDetailPage from "./pages/blogdetails/BlogDetail";
-
+import ScrollToTop from "../src/comp/scrolltotop/ScrollToTop"
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

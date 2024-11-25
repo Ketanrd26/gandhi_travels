@@ -74,11 +74,15 @@
         padding: calc(var(--unit) / 2);
         border-radius: var(--unit);
 
-        .vehicle_image {
-          width: 100%;
-          height: 100%;
+    
+
+          img{
+            width: 100%;
+            height: 100%;
           border-radius: calc(var(--unit) / 2);
-        }
+
+          }
+        
       }
 
       .right-side {
