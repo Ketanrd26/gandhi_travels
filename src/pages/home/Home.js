@@ -8,6 +8,7 @@ import { GoPackage } from "react-icons/go";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import Cardswiper from "../../comp/Home/Cardswiper";
 import Testimonial from "../../comp/Home/Testimonial";
+import Gallerycard from "../../comp/Home/Gallerycard";
 const Home = () => {
   return (
     <>
@@ -160,6 +161,13 @@ const Home = () => {
           <Testimonial />
           </div>
          
+        </div>
+      </div>
+
+      {/* Sixth Section  */}
+      <div class="six-section-parent parent">
+        <div class="six-section-cont cont">
+          <Gallerycard/>
         </div>
       </div>
     </>

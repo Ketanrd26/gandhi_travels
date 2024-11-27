@@ -60,6 +60,11 @@ const Footer = () => {
           </div>
         </div>
       </div>
+
+      <div class="side-icons">
+        <div class="wp s-icon"></div>
+        <div class="call s-icon"></div>
+      </div>
     </>
   );
 };
