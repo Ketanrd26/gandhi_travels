@@ -26,6 +26,21 @@ const Testimonial = () => {
       rightBottom:
         "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
     },
+    {
+      id: 2,
+      leftTop:
+        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      leftBottom:
+        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      middleTop:
+        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      middleBottom:
+        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      rightTop:
+        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      rightBottom:
+        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+    },
   ];
 
   const handleMouseEnter = () => {
