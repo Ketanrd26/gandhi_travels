@@ -2,21 +2,25 @@ import React, { useState } from "react";
 import "./about.scss";
 import Pagetop from "../../comp/pagetop/Pagetop";
 import founder_img from "../../assests/dummy_img.png";
+import mission_img from "../../assests/mission.webp";
+import vision_img from "../../assests/vison.webp";
+import { PiEyesBold } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
+import faq_image from "../../assests/faq_image.webp"
 import { GoGoal } from "react-icons/go";
 const About = () => {
   const vismis_data = [
     {
-      image: founder_img,
-      title: "mission",
+      image: mission_img,
+      title: "Mission",
       icon: <GoGoal />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione nemo pariatur placeat blanditiis perspiciatis voluptas ipsam magnam hic facilis explicabo sit,",
+      desc: "To deliver reliable, comfortable, and safe travel solutions with a diverse fleet, ensuring exceptional customer satisfaction. We aim to make every journey memorable by blending quality service, affordability, and personalized experiences for all our clients.",
     },
     {
-      image: founder_img,
-      title: "mission",
-      icon: <GoGoal />,
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ratione nemo pariatur placeat blanditiis perspiciatis voluptas ipsam magnam hic facilis explicabo sit,",
+      image: vision_img,
+      title: "Vision",
+      icon: <PiEyesBold />,
+      desc: "To be a trusted leader in travel services, offering innovative and sustainable solutions. We strive to expand our reach, enhance customer experiences, and inspire confident, seamless exploration for travelers, contributing to the growth of global tourism.",
     },
   ];
 

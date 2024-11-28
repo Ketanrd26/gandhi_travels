@@ -40,7 +40,8 @@ import urb5 from "../../assests/vehicles/luxary_urbania/urb_5.webp"
 
 
 // kia carnes
-
+import kia_carnes_icon from "../../assests/icons/kia_carnes_icon.webp";
+import kia_carnes_icon_fill from "../../assests/icons/kia_carnes_icon_red.webp";
 import kia_carnes_suv_hero from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
 import kia_car_1 from "../../assests/vehicles/kia_carnes/kia_carnes_1.webp"
 import kia_car_2 from "../../assests/vehicles/kia_carnes/kia_car_2.webp"
@@ -108,13 +109,13 @@ const Vehicels = () => {
       vehicle_name: "KIa Sonnet",
     },
     {
-      image1: bus_icon,
-      image2: bus_icon_fill,
+      image1: kia_carnes_icon,
+      image2: kia_carnes_icon_fill,
       vehicle_name: "Kia Carnes SUV",
     },
     {
-      image1: bus_icon,
-      image2: bus_icon_fill,
+      image1: kia_carnes_icon,
+      image2: kia_carnes_icon_fill,
       vehicle_name: "Innova Crysta",
     },
     {
@@ -150,77 +151,77 @@ const Vehicels = () => {
       vehicle_name: "Toyota glanza",
       image: [volvo1, volvo1, volvo1, volvo1, volvo1],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The Toyota Glanza offers a perfect combination of style, comfort, and fuel efficiency. Ideal for small family trips or business travel, this compact hatchback ensures a smooth journey with premium interiors. A great option for affordable city tours or outstation trips.",
     },
     {
       vehicle_image: bus,
       vehicle_name: "New Ertiga",
       image: [volvo1, volvo1, volvo1, volvo1, volvo1],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The New Ertiga is a spacious 7-seater MPV, ideal for family vacations or group outings. With its advanced safety features and ample luggage space, it ensures a comfortable ride for long journeys or airport transfers.",
     },
     {
       vehicle_image: luxury_urbania_hero,
       vehicle_name: "Luxury Urbania",
       image: [urb1, urb2, urb3, urb4, urb5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The Luxury Urbania redefines premium travel with its modern design and top-notch features. Perfect for corporate travel or VIP tours, this vehicle combines elegance with a luxurious ride experience.",
     },
     {
       vehicle_image: bus,
       vehicle_name: "KIa Sonnet",
       image: [volvo1, volvo2, volvo3, volvo4, volvo5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "A stylish and compact SUV, the Kia Sonet is perfect for couples or small groups exploring city attractions or nearby tourist destinations. Its cutting-edge technology ensures a safe and enjoyable journey for weekend getaways.",
     },
     {
       vehicle_image: kia_carnes_suv_hero,
       vehicle_name: "Kia Carnes SUV",
       image: [kia_car_1, kia_car_2, kia_car_3, kia_car_4, kia_car_5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The Kia Carens offers versatility and comfort for family vacations or business trips. Its spacious interiors and high-end features make it a reliable choice for outstation trips or long drives.",
     },
     {
       vehicle_image: innova_crysta_hero,
       vehicle_name: "Innova Crysta",
       image: [innova1, innova2, innova3, innova4, innova_crysta_hero],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The Toyota Innova Crysta is a trusted name for luxury family travel or corporate tours. Its spacious seating, powerful engine, and refined interiors make it the best choice for outstation trips or executive travel.",
     },
     {
       vehicle_image: bus,
       vehicle_name: "45 AC volvo eicher",
       image: [volvo1, volvo2, volvo3, volvo4, volvo5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The 45-seater AC Volvo Eicher is ideal for large group tours, school trips, or corporate outings. Known for its comfortable seating and smooth suspension, it ensures an enjoyable ride for long journeys.",
     },
     {
       vehicle_image: bhartbenz_hero,
       vehicle_name: "35 AC Bharatbenz",
       image: [bt1, bt2, bt3, bt4, bhartbenz_hero],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The 35-seater AC BharatBenz is perfect for medium-sized group travel. Its modern features and air-conditioned interiors make it a top choice for pilgrimage tours, destination weddings, or corporate events.",
     },
     {
       vehicle_image: modified_luxury,
       vehicle_name: "26 Seater modifeid luxury",
       image: [ml1, ml2, ml3, ml4, ml5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "This 26-seater luxury bus is designed for a premium group travel experience. With its plush seating and modified interiors, it’s ideal for VIP tours, destination weddings, or exclusive group outings.",
     },
     {
       vehicle_image: seater_ac_hero,
       vehicle_name: "20 seater Ac Pushback Bus",
       image: [sp1, sp2, sp3, sp4, sp5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "The 20-seater AC pushback bus is perfect for small group tours. Its reclining seats and ample legroom make it ideal for intercity travel, family trips, or office outings.",
     },
     {
       vehicle_image: seater_bus_hero,
       vehicle_name: "17 Seater Ac Pushback Bus",
       image: [sb1, sb2, sb3, sb4, sb5],
       vehicle_desc:
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "Compact yet spacious, the 17-seater AC pushback bus is great for short group trips or city sightseeing tours. Its air-conditioned interiors ensure a comfortable experience for all passengers.",
     },
   ];
   const [data, setData] = useState(0);
