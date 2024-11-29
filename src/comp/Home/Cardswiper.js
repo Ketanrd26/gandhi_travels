@@ -16,9 +16,15 @@ import bhartbenz_hero from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatb
 import seater_ac_hero from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
 import seater_bus_hero from "../../assests/vehicles/17_s_pushback/17_SEATER_pushback.webp";
 import modified_luxury from "../../assests/vehicles/26_s_modifeid_pushback/26_s_m_pushback.jpg";
+import { useNavigate } from 'react-router-dom';
 
-const Cardswiper = () => {
+const Cardswiper = ({setVehicleDataTransfer}) => {
+  const navigate = useNavigate();
 
+  const vehicleData = (index)=>{
+    setVehicleDataTransfer(index);
+    navigate("/vehicels")
+  }
 
   const vehicledesc = [
     {
@@ -137,8 +143,8 @@ const Cardswiper = () => {
   
         className="mySwiper"
       >
-        {vehicledesc.map((card) => (
-          <SwiperSlide key={card.id} className="nsbox">
+        {vehicledesc.map((card, index) => (
+          <SwiperSlide key={card.id} className="nsbox"  onClick={()=>vehicleData(index)} >
             
             <a href={card.link} className="card-link">
               <div className="card">

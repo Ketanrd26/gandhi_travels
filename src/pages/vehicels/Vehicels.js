@@ -86,7 +86,9 @@ import sb3 from "../../assests/vehicles/17_s_pushback/17_s_3.webp"
 import sb4 from "../../assests/vehicles/17_s_pushback/17_s_4.webp"
 import sb5 from "../../assests/vehicles/17_s_pushback/17_S_5.webp"
 
-const Vehicels = () => {
+const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
+
+  console.log(vehicleDataTransfer, "sdfsdf")
   const vehicelsHeading = [
     {
       image1: bus_icon,
@@ -224,10 +226,13 @@ const Vehicels = () => {
         "Compact yet spacious, the 17-seater AC pushback bus is great for short group trips or city sightseeing tours. Its air-conditioned interiors ensure a comfortable experience for all passengers.",
     },
   ];
-  const [data, setData] = useState(0);
-  const dataMapping = (index) => {
-    setData(index);
-  };
+  // const [data, setData] = useState(0);
+
+
+  // const dataMapping = (index) => {
+  //   setData(index);
+  //   setVehicleDataTransfer(null)
+  // };
 
   return (
     <>
@@ -273,13 +278,13 @@ const Vehicels = () => {
               {vehicelsHeading.map((item, index) => (
                 <SwiperSlide
                   className={
-                    data === index ? "swiperslide active" : "swiperslide"
+                    vehicleDataTransfer === index ? "swiperslide active" : "swiperslide"
                   }
-                  onClick={() => dataMapping(index)}
+                  onClick={() => setVehicleDataTransfer(index)}
                 >
                   <a class="vehicle" href="#data" key={index}>
                     <img
-                      src={data === index ? item.image2 : item.image1}
+                      src={ vehicleDataTransfer === index ? item.image2 : item.image1}
                       alt=""
                     />
 
@@ -292,16 +297,16 @@ const Vehicels = () => {
           <div class="blank-div" id="data"></div>
           <div class="vehi-description">
             <div class="image bg-img-cover">
-              <img src={`${vehicledesc[data].vehicle_image}`} alt="" />
+              <img src={`${vehicledesc[ vehicleDataTransfer].vehicle_image}`} alt="" />
             </div>
             <div class="right-side">
-              <h1>{vehicledesc[data].vehicle_name}</h1>
-              <p>{vehicledesc[data].vehicle_desc}</p>
+              <h1>{vehicledesc[ vehicleDataTransfer].vehicle_name}</h1>
+              <p>{vehicledesc[ vehicleDataTransfer].vehicle_desc}</p>
             </div>
           </div>
 
           <div className="vehicle_images">
-            {vehicledesc[data].image.map((item, index) => (
+            {vehicledesc[vehicleDataTransfer].image.map((item, index) => (
               <div
                 className="vehi_image bg-img-cover"
                 style={{ backgroundImage: `url(${item})` }}

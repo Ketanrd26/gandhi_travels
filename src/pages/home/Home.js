@@ -8,7 +8,10 @@ import Cardswiper from "../../comp/Home/Cardswiper";
 import Testimonial from "../../comp/Home/Testimonial";
 import Gallerycard from "../../comp/Home/Gallerycard";
 import Hero from "../../comp/Home/Hero";
-const Home = () => {
+import { useNavigate } from "react-router-dom";
+const Home = ({setVehicleDataTransfer}) => {
+
+
   return (
     <>
       {/* First Section */}
@@ -119,7 +122,7 @@ const Home = () => {
         <div className="overlay"></div>
         <h2>Lorem, ipsum dolor.</h2>
         <div className="forth-sec-cont cont">
-          <Cardswiper />
+          <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
         </div>
       </div>
 
