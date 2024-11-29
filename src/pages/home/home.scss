@@ -10,6 +10,9 @@
     text-align: center;
 
     padding: 50px 0px;
+    h2{
+      padding-bottom:40px;
+    }
     .main-section {
       display: flex;
       width: 100%;
@@ -165,7 +168,7 @@
 
 .forth-sec-parent {
   margin: 0px 0px 300px 0px;
-  background: url("https://img.freepik.com/free-photo/woman-with-medical-mask-using-public-bus-transportation_23-2149043009.jpg?t=st=1731841092~exp=1731844692~hmac=d4910d36528fdcd66d6d0c41d6c431cc80103801f8c970262219fc27cb477121&w=740");
+  background: url("../../assests/bus.jpg");
   position: relative;
   display: flex;
   justify-content: center;
@@ -206,7 +209,7 @@
 .fifth-section-parent {
   margin-bottom: 50px;
   padding: 100px 0px 50px 0px;
-  background:linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)),url("https://img.freepik.com/free-photo/soft-evening-light-captures-moving-vehicles-from-cars-view_157027-4343.jpg?t=st=1731869458~exp=1731873058~hmac=4b23e1d27ca8779cf2d7e6bbe9b5d703db91f6dcb8692e3b8764fce61c245730&w=1380");
+  background:linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)),url("../../assests/vehicles//20_s_pushback/20_s_pushback.jpg");
  background-attachment: fixed;
  background-size:cover;
  background-repeat: no-repeat;

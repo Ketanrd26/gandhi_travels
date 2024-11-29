@@ -4,6 +4,20 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./testimonial.scss";
+//Bus Images 
+import img1 from "../../assests/vehicles/17_s_pushback/17_SEATER_pushback.webp";
+import img2 from "../../assests/vehicles/20_s_pushback/20_s_2.webp";
+import img3 from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
+import img4 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_m_pushback.jpg";
+import img5 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_5.webp";
+import img6 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
+import img7 from "../../assests/vehicles/innova_crysta/innova_cryst.jpg";
+import img8 from "../../assests/vehicles/innova_crysta/innova_4.webp";
+import img9 from "../../assests/vehicles/kia_carnes/kia_car_2.webp";
+import img10 from "../../assests/vehicles/luxary_urbania/luxary_urbania.jpg";
+import img11 from "../../assests/vehicles/vovlo/image_5.jpg";
+import img12 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
+
 
 const Testimonial = () => {
   const swiperRef = useRef(null);
@@ -13,34 +27,23 @@ const Testimonial = () => {
   const images = [
     {
       id: 1,
-      leftTop:
-        "https://as1.ftcdn.net/v2/jpg/03/89/37/68/1000_F_389376832_DzMVS7vo8kI7oKRA0NTfvfNRBCrlCa2G.jpg",
-      leftBottom:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      middleTop:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      middleBottom:
-        "https://as1.ftcdn.net/v2/jpg/03/89/37/68/1000_F_389376832_DzMVS7vo8kI7oKRA0NTfvfNRBCrlCa2G.jpg",
-      rightTop:
-        "https://as1.ftcdn.net/v2/jpg/03/89/37/68/1000_F_389376832_DzMVS7vo8kI7oKRA0NTfvfNRBCrlCa2G.jpg",
-      rightBottom:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      leftTop: img1,
+      leftBottom: img2,
+      middleTop: img3,
+      middleBottom: img4,
+      rightTop: img5,
+      rightBottom: img6,
     },
     {
       id: 2,
-      leftTop:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      leftBottom:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      middleTop:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      middleBottom:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      rightTop:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
-      rightBottom:
-        "https://t3.ftcdn.net/jpg/02/98/35/82/240_F_298358259_bwYxOvtrqJn7m8dfeYkkoNkusBSYNhep.jpg",
+      leftTop: img7,
+      leftBottom: img8,
+      middleTop: img9,
+      middleBottom: img10,
+      rightTop: img11,
+      rightBottom: img12,
     },
+    
   ];
 
   const handleMouseEnter = () => {
