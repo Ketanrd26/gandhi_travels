@@ -54,12 +54,11 @@ const Hero = () => {
       <div className="hero-cont">
         <h1 className="hero-heading heading">Gandhi's Travels</h1>
         <div className="desc">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
-          nulla dolor aliquid consectetur!
+        Gandhi Travels offers seamless services for airport drops, outstation trips, and luxury travel with a diverse fleet.
         </div>
         <div className="btn-group">
-          <div className="btn">Contact Now</div>
-          <div className="btn-active">About Us</div>
+          <a href="/contactus" className="btn">Contact Now</a>
+          <a href="/about" className="btn-active">About Us</a>
         </div>
       </div>
     </div>

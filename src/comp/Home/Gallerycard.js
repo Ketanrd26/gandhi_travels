@@ -28,7 +28,7 @@ const Gallerycard = () => {
   return (
     <div className="gallerycard-parent parent">
       <div className="gallerycard-cont cont">
-        <h2>Our Gallery</h2>
+        <h2>Our Travel Stories in Pictures</h2>
         <Swiper
           effect="coverflow"
           grabCursor={true}

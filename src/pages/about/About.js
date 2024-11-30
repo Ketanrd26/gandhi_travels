@@ -14,13 +14,13 @@ const About = () => {
       image: mission_img,
       title: "Mission",
       icon: <GoGoal />,
-      desc: "To deliver reliable, comfortable, and safe travel solutions with a diverse fleet, ensuring exceptional customer satisfaction. We aim to make every journey memorable by blending quality service, affordability, and personalized experiences for all our clients.",
+      desc: "To offer a diverse range of vehicles catering to every travel need, ensuring safety, affordability, and comfort. By leveraging innovation and maintaining high service standards, we aim to be the preferred travel partner for individuals, families, and businesses.",
     },
     {
       image: vision_img,
       title: "Vision",
       icon: <PiEyesBold />,
-      desc: "To be a trusted leader in travel services, offering innovative and sustainable solutions. We strive to expand our reach, enhance customer experiences, and inspire confident, seamless exploration for travelers, contributing to the growth of global tourism.",
+      desc: "To revolutionize the travel experience by providing reliable, comfortable, and luxury transportation solutions that connect people and places seamlessly. We strive to set new benchmarks in customer satisfaction and operational excellence.",
     },
   ];
 
@@ -65,13 +65,11 @@ const About = () => {
       <div class="about-parent parent">
         <div class="about-cont cont">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            ratione nemo pariatur placeat blanditiis perspiciatis voluptas ipsam
-            magnam hic facilis explicabo sit, earum impedit. Corrupti dolor
-            commodi delectus sed ex. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Eligendi ratione nemo pariatur placeat blanditiis
-            perspiciatis voluptas ipsam magnam hic facilis explicabo sit, earum
-            impedit. Corrupti dolor commodi delectus sed ex.
+          Welcome to Gandhi Travels, the leading car rental agency in Pune, offering seamless travel solutions for all your needs. Whether you're looking for a Pune to Shirdi Cab, a Pune to Mumbai One-Way Taxi, or a comfortable ride from Pune Airport to Lavasa, we’ve got you covered. Our diverse fleet includes everything from luxury cars for corporate travel to spacious Tempo Travellers for group outings. With services like Innova on Rent with Driver, Honda City on Rent, and Tempo Traveller Rentals, we ensure your journey is both stylish and comfortable.
+
+From Pune to Lonavala, Pune to Nashik, or even a long journey like Pune to Goa, our reliable drivers and well-maintained vehicles make every trip memorable. Based in convenient locations like Koregaon Park, Pimple Saudagar, Viman Nagar, and more, we’re always just a call away. At Gandhi Travels, we are committed to providing top-notch service, whether it's a quick Mumbai Airport to Pune Drop or a scenic trip to Kaas Plateau, Ranjangaon, or Tuljapur.
+
+Book your ride today and experience the best in car rental services in Pune!
           </p>
         </div>
       </div>

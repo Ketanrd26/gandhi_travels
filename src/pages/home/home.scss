@@ -33,6 +33,7 @@
 
         p {
           text-align: left;
+          line-height:28px;
         }
         .btn {
           width: fit-content;
@@ -83,6 +84,9 @@
         width: 50%;
         display: flex;
         flex-direction: column;
+        p{
+          line-height: 28px;
+        }
       }
       .right-fac {
         width: 50%;
@@ -209,7 +213,7 @@
 .fifth-section-parent {
   margin-bottom: 50px;
   padding: 100px 0px 50px 0px;
-  background:linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.377)),url("../../assests/vehicles//20_s_pushback/20_s_pushback.jpg");
+  background:linear-gradient(rgba(0, 0, 0, 0.552),rgba(0, 0, 0, 0.377)),url("../../assests/vehicles//20_s_pushback/20_s_pushback.jpg");
  background-attachment: fixed;
  background-size:cover;
  background-repeat: no-repeat;
