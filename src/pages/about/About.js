@@ -8,6 +8,7 @@ import { PiEyesBold } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
 import faq_image from "../../assests/faq_image.webp"
 import { GoGoal } from "react-icons/go";
+import { Helmet } from "react-helmet";
 const About = () => {
   const vismis_data = [
     {
@@ -59,7 +60,18 @@ const About = () => {
     setFaq(faq === index ? null : index);
   };
   return (
-    <>
+    <><Helmet>
+         <title>About Gandhi Travels | Leading Car Rental Agency in Pune</title>
+        <meta
+          name="description"
+          content="Discover Gandhi Travels, Pune's top car rental agency. Offering luxury cars, tempo travellers, and one-way taxi services for all travel needs. Book your ride today!"
+        />
+        <meta
+          name="keywords"
+          content="car rental Pune, Pune to Shirdi cab, one-way taxi Pune to Mumbai, Pune airport drop, tempo traveller rental Pune, luxury car rental, Innova on rent Pune, Honda City rental, group travel Pune, corporate car rental Pune"
+        />
+        <link rel="canonical" href="https://gandhitravels.co.in/about" />
+      </Helmet>
        <Pagetop pagetop_text="About Gandhi's Travels" />
 
       <div class="about-parent parent">

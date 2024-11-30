@@ -85,6 +85,7 @@ import sb2 from "../../assests/vehicles/17_s_pushback/17_s_2.webp"
 import sb3 from "../../assests/vehicles/17_s_pushback/17_s_3.webp"
 import sb4 from "../../assests/vehicles/17_s_pushback/17_s_4.webp"
 import sb5 from "../../assests/vehicles/17_s_pushback/17_S_5.webp"
+import { Helmet } from "react-helmet";
 
 const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
 
@@ -236,6 +237,18 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
 
   return (
     <>
+     <Helmet>
+        <title>Our Vehicles | Top Car Rental Services in Pune - Gandhi Travels</title>
+        <meta
+          name="description"
+          content="Explore the diverse fleet of vehicles offered by Gandhi Travels. From luxury cars to Tempo Travellers, we provide reliable, comfortable, and affordable transportation solutions."
+        />
+        <meta
+          name="keywords"
+           content="vehicle rental Pune, luxury car rental, tempo traveller rental, car rental services Pune, Honda City rental, Innova rental, Tempo Traveller Pune, corporate travel vehicles, Pune vehicle rental, car hire Pune, Pune to Shirdi cab, Pune to Mumbai taxi, airport taxi service, luxury rental cars, Goa travel car hire, Pune to Lonavala taxi, Tempo Traveller for group travel, family travel Pune, corporate transportation Pune, premium vehicle hire, vehicle rental with driver, reliable car rentals Pune, best car hire Pune, travel solutions Pune"
+        />
+        <link rel="canonical" href="https://gandhitravels.co.in/vehicels" />
+      </Helmet>
       <Pagetop pagetop_text="Vehicels" />
 
       <div class="vehicle-desc-parent parent">

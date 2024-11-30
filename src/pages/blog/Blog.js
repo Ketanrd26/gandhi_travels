@@ -4,6 +4,7 @@ import axios from "axios";
 import AOS from "aos";
 import { Link } from "react-router-dom";
 import Pagetop from "../../comp/pagetop/Pagetop";
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
   const [visibleblog, setVisibleBlogs] = useState(3); // Start with 3 blogs visible
@@ -45,6 +46,18 @@ const Blog = () => {
   return (
     
    <>
+      <Helmet>
+        <title>Blog Details | Gandhi Travels Blog</title>
+        <meta
+          name="description"
+          content="Read the latest blog post from Gandhi Travels, offering insightful travel tips, updates, and stories from our car rental services in Pune and beyond."
+        />
+        <meta
+          name="keywords"
+          content="travel blog, car rental blog, Gandhi Travels blog, Pune travel tips, Pune to Shirdi travel, car rental services blog, travel stories, Pune taxi blog, corporate travel blog, family travel tips, vehicle rental blog, travel advice, Lonavala travel, Shirdi taxi, car hire in Pune, travel updates"
+        />
+        <link rel="canonical" href="https://gandhitravels.co.in/blogdetail" />
+      </Helmet>
    <Pagetop pagetop_text="Blogs" /> <div className="blog-parent parent">
    <div className="blog-cont cont" data-aos="fade-up">
      <div className="card-box" data-aos="fade-up" data-aos-delay="200">
