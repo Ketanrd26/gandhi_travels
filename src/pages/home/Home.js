@@ -22,57 +22,8 @@ const Home = ({ setVehicleDataTransfer }) => {
           name="keywords"
           content="car rental Pune, luxury car rental Pune, Pune to Shirdi cab, Pune airport drop, tempo traveller rental, corporate travel Pune, one-way taxi Mumbai, Lonavala trip, Goa cab service, Pune local travel, safe travel services"
         />
-        <link rel="canonical" href="https://www.yourwebsite.com/" />
+        <link rel="canonical" href="https://gandhitravels.co.in/" />
         
-        {/* Schema Markup */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            name: "Gandhi Travels",
-            description:
-              "Gandhi Travels offers top-notch car rental services across Pune and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to Airport Drops and Luxury Rentals, we cater to all your travel needs.",
-            url: "https://www.yourwebsite.com/",
-            telephone: "+91-1234567890",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "123 Gandhi Travels Lane",
-              addressLocality: "Pune",
-              addressRegion: "MH",
-              postalCode: "411001",
-              addressCountry: "IN",
-            },
-            openingHours: "Mo-Su 08:00-20:00",
-            priceRange: "$$",
-            sameAs: [
-              "https://www.facebook.com/yourpage",
-              "https://www.twitter.com/yourpage",
-              "https://www.instagram.com/yourpage",
-            ],
-            image: "https://www.yourwebsite.com/images/logo.png",
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.8",
-              reviewCount: "350",
-            },
-            serviceArea: {
-              "@type": "Place",
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "18.5204",
-                longitude: "73.8567",
-              },
-            },
-            offers: {
-              "@type": "Offer",
-              url: "https://www.yourwebsite.com/offers",
-              priceCurrency: "INR",
-              price: "1500",
-              availability: "https://schema.org/InStock",
-              validFrom: "2024-11-01",
-            },
-          })}
-        </script>
       </Helmet>
 
       {/* First Section */}
@@ -85,7 +36,7 @@ const Home = ({ setVehicleDataTransfer }) => {
         <div className="home-about-cont cont">
           <h2>About Us</h2>
           <div className="main-section">
-            <div className="left-box"></div>
+            <div className="left-box bg-img-cover"></div>
             <div className="right-box">
               <p>
                 Gandhi Travels offers top-notch car rental services across Pune and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to Airport Drops and Luxury Rentals, we cater to all your travel needs. With a diverse fleet, including Honda City, Innova with Driver, and Tempo Travellers, we ensure every journey is comfortable and reliable. Whether it's a trip to Lonavala, Goa, or corporate travel within Pune, Gandhi Travels is your trusted partner for safe and seamless travel.
