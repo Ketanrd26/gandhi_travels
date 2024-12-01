@@ -2,6 +2,10 @@ import React from "react";
 import "./footer.scss";
 import logo from "../../assests/logo.png";
 import { Link } from "react-router-dom";
+import video from "../../assests/footer_video.mp4";
+import ReactPlayer from "react-player";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 const Footer = () => {
   const NavLinks = [
     {
@@ -25,7 +29,24 @@ const Footer = () => {
     <>
       <div class="before_footer parent">
         <div class="before_footer_cont cont">
-          <div class="video-section"></div>
+          <div class="video-section">
+            <ReactPlayer
+              url={video}
+              playing={true}
+              muted={true}
+              controls={false}
+              width="100%"
+             loop={true}
+              className="react-player"
+              config={{
+                file: {
+                  attributes: {
+                    preload: "metadata",
+                  },
+                },
+              }}
+            />
+          </div>
         </div>
       </div>
       <div class="footer-parent parent">
@@ -62,8 +83,12 @@ const Footer = () => {
       </div>
 
       <div class="side-icons">
-        <div class="wp s-icon"></div>
-        <div class="call s-icon"></div>
+        <a href="https://wa.me/+918308988188" target="blank" class="wp s-icon">
+        <FaWhatsapp />
+        </a>
+        <a href="tel:+918308988188" target="blank" class="call s-icon">
+        <IoCall />
+        </a>
       </div>
     </>
   );

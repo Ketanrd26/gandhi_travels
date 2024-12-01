@@ -6,7 +6,7 @@ import mission_img from "../../assests/mission.webp";
 import vision_img from "../../assests/vison.webp";
 import { PiEyesBold } from "react-icons/pi";
 import { IoIosArrowDown } from "react-icons/io";
-import faq_image from "../../assests/faq_image.webp"
+import faq_image from "../../assests/faq_image.webp";
 import { GoGoal } from "react-icons/go";
 import { Helmet } from "react-helmet";
 const About = () => {
@@ -25,34 +25,33 @@ const About = () => {
     },
   ];
 
-
   const [faq, setFaq] = useState(null);
 
   const faqContent = [
     {
-      title: "How much will it cost?",
+      title: "What types of vehicles are available for rental?",
       content:
-        "Price depends on size, detail, and how long the session takes. Smaller pieces usually start at a set minimum, and larger or more detailed ones can go up from there. We can give you an estimate when you show us the design and placement!",
+        "We offer a wide range of vehicles, including cars (e.g., Toyota Glanza, Kia Sonnet, Innova Crysta), travelers (e.g., Luxury Urbania, 17-seater AC pushback buses), and coaches (e.g., 45-seater AC Volvo, 35-seater AC BharatBenz) to suit your travel needs.",
     },
     {
-      title: "How should I prepare for my tattoo appointment?",
+      title: "Do you provide chauffeurs with your vehicles?",
       content:
-        "Definitely eat a good meal beforehand so you don’t feel lightheaded. Stay hydrated, and wear something comfortable that gives easy access to the area we’re tattooing. Also, bring good vibes – it’ll make the session way more fun!",
+        "Yes, all our vehicles come with professional and experienced chauffeurs to ensure a safe and comfortable journey for our clients.",
     },
     {
-      title: "How do I decide on tattoo placement?",
+      title: "Can your services cater to corporate events?",
       content:
-        "Placement is key! Think about how visible you want it to be and how the design fits with your body. Some spots are more painful, but if you’re unsure, we can suggest areas that work well with your chosen design.",
+        "Absolutely! We serve over 150 corporate clients and provide vehicles for business trips, events, and employee transportation needs.",
     },
     {
-      title: "How do I choose the right design?",
+      title: "Are your vehicles available for family trips and tourism?",
       content:
-        "Choosing a design is all about what feels right to you. If it’s your first tattoo, you might want something meaningful or simple to start with. We can also brainstorm together if you have an idea but aren’t sure. Bringing in reference photos helps too!",
+        "Yes, we cater to family trips, weddings, and tourism, ensuring a memorable and hassle-free travel experience with our range of comfortable and well-maintained vehicles.",
     },
     {
-      title: "Can I get a tattoo cover-up, and how does it work?",
+      title: "How do I book a vehicle with Gandhi Travels?",
       content:
-        "Yes, you can! Tattoo cover-ups involve designing a new piece to effectively conceal your old tattoo. We often use darker colors or intricate designs to ensure a seamless blend. Just stop by for a consultation, and we’ll help you create a cover-up that looks fantastic!",
+        "You can book by contacting us directly at our office in Viman Nagar, Pune, or through our online portal. We recommend booking in advance, especially during peak seasons, to secure your preferred vehicle.",
     },
   ];
   const handleToggle = (index) => {
@@ -60,8 +59,9 @@ const About = () => {
     setFaq(faq === index ? null : index);
   };
   return (
-    <><Helmet>
-         <title>About Gandhi Travels | Leading Car Rental Agency in Pune</title>
+    <>
+      <Helmet>
+        <title>About Gandhi Travels | Leading Car Rental Agency in Pune</title>
         <meta
           name="description"
           content="Discover Gandhi Travels, Pune's top car rental agency. Offering luxury cars, tempo travellers, and one-way taxi services for all travel needs. Book your ride today!"
@@ -72,16 +72,21 @@ const About = () => {
         />
         <link rel="canonical" href="https://gandhitravels.co.in/about" />
       </Helmet>
-       <Pagetop pagetop_text="About Gandhi's Travels" />
+      <Pagetop pagetop_text="About Gandhi's Travels" />
 
       <div class="about-parent parent">
         <div class="about-cont cont">
           <p>
-          Welcome to Gandhi Travels, the leading car rental agency in Pune, offering seamless travel solutions for all your needs. Whether you're looking for a Pune to Shirdi Cab, a Pune to Mumbai One-Way Taxi, or a comfortable ride from Pune Airport to Lavasa, we’ve got you covered. Our diverse fleet includes everything from luxury cars for corporate travel to spacious Tempo Travellers for group outings. With services like Innova on Rent with Driver, Honda City on Rent, and Tempo Traveller Rentals, we ensure your journey is both stylish and comfortable.
-
-From Pune to Lonavala, Pune to Nashik, or even a long journey like Pune to Goa, our reliable drivers and well-maintained vehicles make every trip memorable. Based in convenient locations like Koregaon Park, Pimple Saudagar, Viman Nagar, and more, we’re always just a call away. At Gandhi Travels, we are committed to providing top-notch service, whether it's a quick Mumbai Airport to Pune Drop or a scenic trip to Kaas Plateau, Ranjangaon, or Tuljapur.
-
-Book your ride today and experience the best in car rental services in Pune!
+            Gandhi Travels was started by Mr.Amar Anant Gandhi in the year 1999,
+            We first started initially with one matedor driving by himself then
+            slowly added vehicles such as Trax, Sumo and Tavera. Gradually hired
+            more chauffers and progressed. in 2007 we had around 9 vehicle and
+            10 chauffers included in our Team. Till here everything was managed
+            by Amar Gandhi single handedly, then we started to hire office staff
+            and here we are today with over 27+ Vehicles diversified in all
+            segments such as cars,travellers and coaches on rental basis to more
+            than 150+ corporate clients as well as infinite happy families who
+            travelled through our cars and buses.
           </p>
         </div>
       </div>
@@ -93,17 +98,17 @@ Book your ride today and experience the best in car rental services in Pune!
           </div>
 
           <div class="founder-desc">
-            <h2>lorem lipsum</h2>
+            <h2>Mr.Amar Anant Gandhi</h2>
 
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus fugit ab laborum quibusdam est doloribus
-              perspiciatis aut veniam adipisci repellat. Lorem, ipsum dolor sit
-              amet consectetur adipisicing elit. Necessitatibus fugit ab laborum
-              quibusdam est doloribus perspiciatis aut veniam adipisci repellat.
+              Mr. Amar Anant Gandhi is the visionary founder of Gandhi Travels,
+              established in 1999. With a humble beginning of driving a single
+              matador, he has grown the business into a trusted brand with a
+              fleet of 27+ vehicles, serving over 150 corporate clients and
+              countless families.
             </p>
 
-            <a class="btn-active">Let's Connect</a>
+            <a class="btn-active"  href="https://wa.me/+918308988188" target="blank" >Let's Connect</a>
           </div>
         </div>
       </div>
@@ -116,9 +121,9 @@ Book your ride today and experience the best in car rental services in Pune!
                 class="image bg-img-cover"
                 style={{ background: `url(${item.image})` }}
               >
-                <div class="overlay"><h1>
-                {item.title}
-                    </h1></div>
+                <div class="overlay">
+                  <h1>{item.title}</h1>
+                </div>
               </div>
               <div class="vis_mis_desc">
                 <div class="icon">{item.icon}</div>
@@ -129,8 +134,6 @@ Book your ride today and experience the best in car rental services in Pune!
         </div>
       </div>
 
-
-      
       <div className="faq-parent parent">
         <div
           className="faq-cont cont"
@@ -142,14 +145,15 @@ Book your ride today and experience the best in car rental services in Pune!
 
           <div className="right">
             <h5>Faq</h5>
-            <p>
-             Frequently Asked Questions
-            </p>
+            <p>Frequently Asked Questions</p>
 
             <div className="faq-list">
               {faqContent.map((item, index) => (
                 <div className="faq" key={index}>
-                  <div className={faq === index ? "heading active" : "heading"} onClick={() => handleToggle(index)}>
+                  <div
+                    className={faq === index ? "heading active" : "heading"}
+                    onClick={() => handleToggle(index)}
+                  >
                     <p>{item.title}</p>
                     <div className={faq === index ? "icon active" : "icon"}>
                       <IoIosArrowDown />

@@ -4,21 +4,37 @@
   height: auto;
   width: 100%;
   // // height: 100svh;
-  height: 500px;
-
+  height: 700px;
   .before_footer_cont {
     position: relative;
-padding: 0px 20px;
-    .video-section{
+    padding: 0px 20px;
+
+    .video-section {
       width: 100%;
-      height: 100%;
-      background-color: red;
-      position: absolute;
-     left: 50%;
-     bottom: -10%;
-     transform: translateX(-50%);
-      // z-index: 9999999;
+      height: fit-content;
+      background-color: red; /* You can change this */
+      position: relative;
+      left: 50%;
+      bottom: -10%;
+      transform: translateX(-50%);
       border-radius: var(--unit);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  //  overflow: hidden;
+      .react-player {
+        position: absolute;
+        top: 0;
+        right: 0;
+        object-fit: cover !important;
+        width: 100% !important;
+        height: 100% !important;
+
+        video{
+          height: auto !important;
+          border-radius:var(--unit)!important;
+        }
+      }
     }
   }
 }
@@ -96,6 +112,10 @@ padding: 0px 20px;
 }
 
 @media screen and (max-width: 1000px) {
+
+  .before_footer{
+    height: 580px;
+  }
   .footer-parent {
     .footer-cont {
       grid-template-columns: repeat(2, 1fr);
@@ -110,6 +130,9 @@ padding: 0px 20px;
 }
 
 @media screen and (max-width: 700px) {
+  .before_footer{
+    height:350px;
+  }
   .footer-parent {
     .footer-cont {
       grid-template-columns: 1fr;
@@ -117,7 +140,16 @@ padding: 0px 20px;
   }
 }
 
+@media screen and (max-width: 600px){
+  .before_footer{
+    height: 290px ;
+  }
+}
+
 @media screen and (max-width: 450px) {
+  .before_footer{
+    height: 190px !important;
+  }
   .footer-parent {
     .footer-cont {
       .gandhi-about {
@@ -130,8 +162,7 @@ padding: 0px 20px;
   }
 }
 
-
-.side-icons{
+.side-icons {
   width: auto;
   height: auto;
   display: flex;
@@ -143,11 +174,19 @@ padding: 0px 20px;
   bottom: 2%;
   right: 2%;
 
-  .s-icon{
+  .s-icon {
     width: 50px;
     aspect-ratio: 1;
-    border-radius: calc(var(--unit)/2);
-cursor: pointer;
+    border-radius: calc(var(--unit) / 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     background-color: var(--accent);
+
+    svg{
+      font-size: 32px;
+      color: var(--white);
+    }
   }
 }

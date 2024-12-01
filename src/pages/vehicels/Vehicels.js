@@ -87,6 +87,8 @@ import sb4 from "../../assests/vehicles/17_s_pushback/17_s_4.webp"
 import sb5 from "../../assests/vehicles/17_s_pushback/17_S_5.webp"
 import { Helmet } from "react-helmet";
 
+
+
 const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
 
   console.log(vehicleDataTransfer, "sdfsdf")
@@ -259,6 +261,7 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
               spaceBetween={30}
               loop={true}
               centeredSlides={false}
+              onSlideChange={setVehicleDataTransfer(vehicleDataTransfer)}
               autoplay={{
                 delay: 2500,
                 disableOnInteraction: false,
