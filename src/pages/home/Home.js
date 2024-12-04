@@ -36,7 +36,7 @@ const Home = ({ setVehicleDataTransfer }) => {
         <div className="home-about-cont cont">
           <h2>About Us</h2>
           <div className="main-section">
-            <div className="left-box bg-img-cover"></div>
+            <div className="left-box bg-img-contain"></div>
             <div className="right-box">
               <p>
                 Gandhi Travels offers top-notch car rental services across Pune and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to Airport Drops and Luxury Rentals, we cater to all your travel needs. With a diverse fleet, including Honda City, Innova with Driver, and Tempo Travellers, we ensure every journey is comfortable and reliable. Whether it's a trip to Lonavala, Goa, or corporate travel within Pune, Gandhi Travels is your trusted partner for safe and seamless travel.

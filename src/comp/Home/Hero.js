@@ -7,13 +7,13 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import "./hero.scss";
 
 // Import images
-import img1 from "../../assests/vehicles/17_s_pushback/17_SEATER_pushback.webp";
+import img1 from "../../assests/vehicles/17_s_pushback/17seater.webp";
 import img2 from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
-import img3 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_m_pushback.jpg";
+import img3 from "../../assests/vehicles/26_s_modifeid_pushback/26seat.webp";
 import img4 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
 import img5 from "../../assests/vehicles/innova_crysta/innova_cryst.jpg";
-import img6 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
-import img7 from "../../assests/vehicles/luxary_urbania/luxary_urbania.jpg";
+import img6 from "../../assests/vehicles/kia_carnes/kia.jpg";
+import img7 from "../../assests/vehicles/luxary_urbania/urbania.webp";
 import img8 from "../../assests/vehicles/vovlo/image_5.jpg";
 const Hero = () => {
   // Array of image data
