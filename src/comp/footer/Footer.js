@@ -6,6 +6,8 @@ import video from "../../assests/footer_video.mp4";
 import ReactPlayer from "react-player";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import { LuInstagram } from "react-icons/lu";
+import { MdMailOutline } from "react-icons/md";
 const Footer = () => {
   const NavLinks = [
     {
@@ -36,7 +38,7 @@ const Footer = () => {
               muted={true}
               controls={false}
               width="100%"
-             loop={true}
+              loop={true}
               className="react-player"
               config={{
                 file: {
@@ -54,9 +56,9 @@ const Footer = () => {
           <div class="gandhi-about">
             <img src={logo} alt="" />
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, 
+              Gandhi Travels offers top-notch car rental services across Pune
+              and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to
+              Airport Drops and Luxury Rentals,
             </p>
           </div>
           <div class="nav-links">
@@ -73,10 +75,18 @@ const Footer = () => {
           <div class="last">
             <h4>Get in touch</h4>
             <div class="social_icons">
-              <div class="icons"></div>
-              <div class="icons"></div>
-              <div class="icons"></div>
-              <div class="icons"></div>
+              <a href="" class="icons">
+                <LuInstagram />
+              </a>
+              <a href="https://wa.me/+918308988188" class="icons">
+                <FaWhatsapp />
+              </a>
+              <a href="tel:+918308988188" class="icons">
+                <IoCall />
+              </a>
+              <a href="" class="icons">
+                <MdMailOutline />
+              </a>
             </div>
           </div>
         </div>
@@ -84,10 +94,10 @@ const Footer = () => {
 
       <div class="side-icons">
         <a href="https://wa.me/+918308988188" target="blank" class="wp s-icon">
-        <FaWhatsapp />
+          <FaWhatsapp />
         </a>
         <a href="tel:+918308988188" target="blank" class="call s-icon">
-        <IoCall />
+          <IoCall />
         </a>
       </div>
     </>
