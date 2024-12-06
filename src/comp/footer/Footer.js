@@ -75,16 +75,16 @@ const Footer = () => {
           <div class="last">
             <h4>Get in touch</h4>
             <div class="social_icons">
-              <a href="" class="icons">
+              <a target="blank" href="" class="icons">
                 <LuInstagram />
               </a>
-              <a href="https://wa.me/+918308988188" class="icons">
+              <a target="blank" href="https://wa.me/+918308988188" class="icons">
                 <FaWhatsapp />
               </a>
-              <a href="tel:+918308988188" class="icons">
+              <a target="blank" href="tel:+918308988188" class="icons">
                 <IoCall />
               </a>
-              <a href="" class="icons">
+              <a target="blank" href="" class="icons">
                 <MdMailOutline />
               </a>
             </div>
@@ -93,10 +93,10 @@ const Footer = () => {
       </div>
 
       <div class="side-icons">
-        <a href="https://wa.me/+918308988188" target="blank" class="wp s-icon">
+        <a rget="blank" href="https://wa.me/+918308988188" target="blank" class="wp s-icon">
           <FaWhatsapp />
         </a>
-        <a href="tel:+918308988188" target="blank" class="call s-icon">
+        <a rget="blank" href="tel:+918308988188" target="blank" class="call s-icon">
           <IoCall />
         </a>
       </div>
