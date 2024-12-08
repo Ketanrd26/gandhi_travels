@@ -131,7 +131,7 @@ const Home = ({ setVehicleDataTransfer }) => {
       <div className="fifth-section-parent parent">
         <div className="fifth-section-cont cont">
           <h2>
-            Our <span>Vehicle Showcase</span>
+            Our <span>Customer Reviews</span>
           </h2>
           <div className="test">
             <Testimonial />

@@ -33,6 +33,7 @@ const Gallerycard = () => {
           effect="coverflow"
           grabCursor={true}
           centeredSlides={true}
+        loop={true}
           slidesPerView="auto"
           initialSlide={1} // Start with the second slide
           coverflowEffect={{

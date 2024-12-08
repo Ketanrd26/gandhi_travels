@@ -5,18 +5,18 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./testimonial.scss";
 //Bus Images 
-import img1 from "../../assests/vehicles/17_s_pushback/17_SEATER_pushback.webp";
-import img2 from "../../assests/vehicles/20_s_pushback/20_s_2.webp";
-import img3 from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
-import img4 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_m_pushback.jpg";
-import img5 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_5.webp";
-import img6 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
-import img7 from "../../assests/vehicles/innova_crysta/innova_cryst.jpg";
-import img8 from "../../assests/vehicles/innova_crysta/innova_4.webp";
-import img9 from "../../assests/vehicles/kia_carnes/kia_car_2.webp";
-import img10 from "../../assests/vehicles/luxary_urbania/luxary_urbania.jpg";
-import img11 from "../../assests/vehicles/vovlo/image_5.jpg";
-import img12 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
+import img1 from "../../assests/testimoneal/test_1.jpeg";
+import img2 from "../../assests/testimoneal/test_2.jpeg";
+import img3 from "../../assests/testimoneal/test_3.jpeg";
+import img4 from "../../assests/testimoneal/test_4.jpeg";
+import img5 from "../../assests/testimoneal/test_5.jpeg";
+import img6 from "../../assests/testimoneal/test_6.jpeg";
+import img7 from "../../assests/testimoneal/test_7.jpeg";
+import img8 from "../../assests/testimoneal/test_8.jpeg";
+import img9 from "../../assests/testimoneal/test_9.jpeg";
+import img10 from "../../assests/testimoneal/test_10.jpeg";
+import img11 from "../../assests/testimoneal/test_11.jpeg";
+import img12 from "../../assests/testimoneal/test_12.jpeg";
 
 
 const Testimonial = () => {
@@ -77,6 +77,7 @@ const Testimonial = () => {
       <div className="testimonial-cont cont">
         <Swiper
           ref={swiperRef}
+          spaceBetween={10}
           navigation={true} // Enable navigation
           loop={true}
           modules={[Navigation, Autoplay]} // Ensure Navigation module is included
@@ -92,38 +93,50 @@ const Testimonial = () => {
                 <div className="left-card">
                   <div
                     className="top bg-img-cover"
-                    style={{ backgroundImage: `url(${image.leftTop})` }}
+                
                     onClick={() => openLightbox(image.leftTop)}
-                  ></div>
+                  >
+                    <img src={image.leftTop} alt=""/>
+                  </div>
                   <div
                     className="bottom bg-img-cover"
-                    style={{ backgroundImage: `url(${image.leftBottom})` }}
-                    onClick={() => openLightbox(image.leftBottom)}
-                  ></div>
+                 
+                 
+                  >
+                      <img src={image.leftBottom} alt=""/>
+                  </div>
                 </div>
                 <div className="middle-card">
                   <div
                     className="top bg-img-cover"
-                    style={{ backgroundImage: `url(${image.middleTop})` }}
+             
                     onClick={() => openLightbox(image.middleTop)}
-                  ></div>
+                  >
+                     <img src={image.middleTop} alt=""/>
+                  </div>
                   <div
                     className="bottom bg-img-cover"
-                    style={{ backgroundImage: `url(${image.middleBottom})` }}
+                    
                     onClick={() => openLightbox(image.middleBottom)}
-                  ></div>
+                  >
+                     <img src={image.middleBottom} alt=""/>
+                  </div>
                 </div>
                 <div className="right-card">
                   <div
                     className="top bg-img-cover"
-                    style={{ backgroundImage: `url(${image.rightTop})` }}
+                 
                     onClick={() => openLightbox(image.rightTop)}
-                  ></div>
+                  >
+                     <img src={image.rightTop} alt=""/>
+                  </div>
                   <div
                     className="bottom bg-img-cover"
-                    style={{ backgroundImage: `url(${image.rightBottom})` }}
+   
                     onClick={() => openLightbox(image.rightBottom)}
-                  ></div>
+                  >
+                     <img src={image.rightBottom} alt=""/>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

@@ -75,7 +75,7 @@ const Footer = () => {
           <div class="last">
             <h4>Get in touch</h4>
             <div class="social_icons">
-              <a target="blank" href="" class="icons">
+              <a target="blank" href="https://www.instagram.com/gandhi_travels_pune?igsh=MXh5NXI4aGN6aWtmMg" class="icons">
                 <LuInstagram />
               </a>
               <a target="blank" href="https://wa.me/+918308988188" class="icons">
@@ -84,7 +84,7 @@ const Footer = () => {
               <a target="blank" href="tel:+918308988188" class="icons">
                 <IoCall />
               </a>
-              <a target="blank" href="" class="icons">
+              <a target="blank" href="mailto:arpit.gandhi26@gmail.com" class="icons">
                 <MdMailOutline />
               </a>
             </div>
