@@ -198,3 +198,23 @@
     }
   }
 }
+
+
+.after_footer{
+  width: 100%;
+  background-color: black;
+  height: auto;
+  padding: 20px 0px;
+
+  .after_footer_cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    a{
+      font-size: calc( var(--unit) - 5px);
+      color: rgba(128, 128, 128, 0.765);
+    }
+  }
+}
