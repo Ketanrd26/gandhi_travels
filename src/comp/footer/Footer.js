@@ -109,7 +109,7 @@ const Footer = () => {
             @copyright / Gandhi's travels
           </p>
         </div>
-      </div>
+      </div> 
     </>
   );
 };
