@@ -1,13 +1,84 @@
-import React from 'react'
-import "./contact.scss"
-import Pagetop from '../../comp/pagetop/Pagetop'
+import React, { useState, useEffect } from "react";
+import { Modal } from "antd";
+import "./contact.scss";
+import Pagetop from "../../comp/pagetop/Pagetop";
+
+// AOS and React Helmet imports
+import AOS from "aos";
+import "aos/dist/aos.css"; // import AOS styles
+import { Helmet } from "react-helmet"; // for SEO
+
 const Contact = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  function Submit(e) {
+    e.preventDefault();
+
+    setIsSubmitting(true); // Set submitting state to true
+
+    const formEle = document.querySelector("form");
+    const formDatab = new FormData(formEle);
+
+    fetch(
+      "https://script.google.com/macros/s/AKfycbzwymTH9QNPF94p9a293wh3kDHZve_HjxGcLJwy_57G9uusV2grUxHikP75HpUR5Uit/exec",
+      {
+        method: "POST",
+        body: formDatab,
+      }
+    )
+      .then((res) => res.text())
+      .then((data) => {
+        console.log(data);
+        setIsSubmitting(false); // Reset submitting state
+        showModal(); // Show success modal
+        formEle.reset(); // Reset the form
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setIsSubmitting(false); // Reset submitting state even on error
+        alert("Something went wrong. Please try again.");
+      });
+  }
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // animation duration
+      easing: 'ease-in-out', // easing effect
+      once: true, // animation runs only once
+    });
+  }, []);
+
   return (
     <>
+      <Helmet>
+        <title>Contact Us | Gandhi Travels</title>
+        <meta
+          name="description"
+          content="Contact Gandhi Travels for all your travel and booking inquiries. Fill out the form below and we will get back to you."
+        />
+        <meta
+          name="keywords"
+          content="contact, travel inquiries, booking, Gandhi Travels, car rental, consultation"
+        />
+        <link rel="canonical" href="https://gandhitravels.co.in/contactus" />
+      </Helmet>
 
-<Pagetop pagetop_text="About Gandhi's Travels" />
+      <Pagetop pagetop_text="Contact Us" />
 
-       <div className="parent contact-parent">
+      <div className="parent contact-parent">
         <div
           className="cont contact-cont"
           data-aos="fade-up"
@@ -24,22 +95,20 @@ const Contact = () => {
               </p>
             </div>
             <div className="contact-bottom">
-              <form >
+              <form onSubmit={(e) => Submit(e)}>
                 <div className="form-group">
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="firstname"
+                    name="Firstname"
                     placeholder="First Name"
-                 
                     required
                   />
                   <input
                     type="text"
                     id="lastname"
-                    name="lastname"
+                    name="Lastname"
                     placeholder="Last Name"
-                  
                     required
                   />
                 </div>
@@ -47,41 +116,56 @@ const Contact = () => {
                 <div className="form-group">
                   <input
                     type="email"
-                    id="email"
-                    name="email"
+                    id="Email"
+                    name="Email"
                     placeholder="Email"
-                   
-                  
                     required
                   />
                   <input
                     type="text"
-                    id="contact"
-                    name="contact"
-                    placeholder="Contact"
-                 
+                    id="mobile"
+                    name="Mobile"
+                    placeholder="Mobile Number"
                     required
                   />
                 </div>
 
                 <textarea
-                  id="message"
-                  name="message"
+                  id="Message"
+                  name="Message"
                   placeholder="Your Message"
-                  
                   required
                 />
 
-                <button className="btn-active" type="submit">
-                  <div className="btn_text ">Submit</div>
+                <button className="btn-active" type="submit" disabled={isSubmitting}>
+                  <div className="btn_text">
+                    {isSubmitting ? "Submitting..." : "Submit"}
+                  </div>
                 </button>
               </form>
             </div>
           </div>
         </div>
       </div>
-    </>
-  )
-}
 
-export default Contact
+      {/* Success Modal */}
+      <Modal
+        title="Success"
+        visible={isModalVisible}
+        onOk={handleOk}
+        onCancel={handleCancel}
+        footer={null}
+      >
+        <p>Your message has been sent successfully!</p>
+        <button
+          className="btn-activated green-btn"
+          onClick={handleOk}
+        >
+          <div className="btn_text" style={{ fontSize: "20px" }}>OK</div>
+        </button>
+      </Modal>
+    </>
+  );
+};
+
+export default Contact;

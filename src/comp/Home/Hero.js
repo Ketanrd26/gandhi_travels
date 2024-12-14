@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import "aos/dist/aos.css"; // Import AOS styles
+import AOS from "aos"; // Import AOS library
 import "./hero.scss";
 
 // Import images
@@ -15,8 +17,12 @@ import img5 from "../../assests/vehicles/innova_crysta/innova_cryst.jpg";
 import img6 from "../../assests/vehicles/kia_carnes/kia.jpg";
 import img7 from "../../assests/vehicles/luxary_urbania/urbania.webp";
 import img8 from "../../assests/vehicles/vovlo/image_5.jpg";
+
 const Hero = () => {
-  // Array of image data
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Initialize AOS with a duration
+  }, []);
+
   const slides = [
     { id: 2, image: img2, overlay: true },
     { id: 1, image: img1, overlay: true },
@@ -38,27 +44,35 @@ const Hero = () => {
         keyboard={true}
         modules={[Navigation, Pagination, Mousewheel, Keyboard]}
         className="mySwiper"
+       
       >
-        {/* Map through slides array */}
         {slides.map((slide) => (
           <SwiperSlide key={slide.id} className="box">
             <div
               className="swiper-img bg-img-cover"
-              style={{ backgroundImage: `url(${slide.image})` }} // Dynamically set background image
+              style={{ backgroundImage: `url(${slide.image})` }}
+              data-aos="fade-down" // Add AOS animation for individual slides
             >
               {slide.overlay && <div className="overlay"></div>}
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="hero-cont">
+      <div className="hero-cont" data-aos="fade-down">
         <h1 className="hero-heading heading">Gandhi's Travels</h1>
         <div className="desc">
-        Gandhi Travels offers seamless services for airport drops, outstation trips, and luxury travel with a diverse fleet.
+          Gandhi Travels offers seamless services for airport drops,
+          outstation trips, and luxury travel with a diverse fleet.
         </div>
-        <div className="btn-group">
-          <a href="/contactus" className="btn">Contact Now</a>
-          <a href="/about" className="btn-active">About Us</a>
+        
+       
+        <div className="btn-group" data-aos="fade-up"  >
+          <a href="/contactus" className="btn">
+            Contact Now
+          </a>
+          <a href="/about" className="btn-active">
+            About Us
+          </a>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./about.scss";
 import Pagetop from "../../comp/pagetop/Pagetop";
-import founder_img from "../../assests/dummy_img.png";
+import founder_img from "../../assests/owner.webp";
 import mission_img from "../../assests/mission.webp";
 import vision_img from "../../assests/vison.webp";
 import { PiEyesBold } from "react-icons/pi";
@@ -9,6 +9,9 @@ import { IoIosArrowDown } from "react-icons/io";
 import faq_image from "../../assests/faq_image.webp";
 import { GoGoal } from "react-icons/go";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const About = () => {
   const vismis_data = [
     {
@@ -54,10 +57,16 @@ const About = () => {
         "You can book by contacting us directly at our office in Viman Nagar, Pune, or through our online portal. We recommend booking in advance, especially during peak seasons, to secure your preferred vehicle.",
     },
   ];
+
   const handleToggle = (index) => {
-    // If the clicked index is already open, close it; otherwise, open the new one.
     setFaq(faq === index ? null : index);
   };
+
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init();
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -72,11 +81,11 @@ const About = () => {
         />
         <link rel="canonical" href="https://gandhitravels.co.in/about" />
       </Helmet>
-      <Pagetop pagetop_text="About Gandhi's Travels" />
+      <Pagetop pagetop_text="About Gandhi's Travels" data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" />
 
-      <div class="about-parent parent">
-        <div class="about-cont cont">
-          <p>
+      <div className="about-parent parent">
+        <div className="about-cont cont">
+          <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
             Gandhi Travels was started by Mr.Amar Anant Gandhi in the year 1999,
             We first started initially with one matedor driving by himself then
             slowly added vehicles such as Trax, Sumo and Tavera. Gradually hired
@@ -84,20 +93,20 @@ const About = () => {
             10 chauffers included in our Team. Till here everything was managed
             by Amar Gandhi single handedly, then we started to hire office staff
             and here we are today with over 27+ Vehicles diversified in all
-            segments such as cars,travellers and coaches on rental basis to more
+            segments such as cars, travellers and coaches on rental basis to more
             than 150+ corporate clients as well as infinite happy families who
             travelled through our cars and buses.
           </p>
         </div>
       </div>
 
-      <div class="founder-parent parent">
-        <div class="founder-cont cont">
-          <div class="founder-image">
+      <div className="founder-parent parent">
+        <div className="founder-cont cont " data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+          <div className="founder-image">
             <img src={founder_img} alt="" />
           </div>
 
-          <div class="founder-desc">
+          <div className="founder-desc">
             <h2>Mr.Amar Anant Gandhi</h2>
 
             <p>
@@ -108,25 +117,27 @@ const About = () => {
               countless families.
             </p>
 
-            <a class="btn-active"  href="https://wa.me/+918308988188" target="blank" >Let's Connect</a>
+            <a className="btn-active" href="https://wa.me/+918308988188" target="blank">
+              Let's Connect
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="mission-vision parent">
-        <div class="misvis-cont cont">
+      <div className="mission-vision parent">
+        <div className="misvis-cont cont">
           {vismis_data.map((item, index) => (
-            <div class="vismis_card" key={index}>
+            <div className="vismis_card" key={index} data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <div
-                class="image bg-img-cover"
+                className="image bg-img-cover"
                 style={{ background: `url(${item.image})` }}
               >
-                <div class="overlay">
+                <div className="overlay">
                   <h1>{item.title}</h1>
                 </div>
               </div>
-              <div class="vis_mis_desc">
-                <div class="icon">{item.icon}</div>
+              <div className="vis_mis_desc">
+                <div className="icon">{item.icon}</div>
                 <p>{item.desc}</p>
               </div>
             </div>

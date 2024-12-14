@@ -30,22 +30,16 @@ const Blog = () => {
     AOS.init();
   }, []);
 
-
   function formatDate(dateString) {
-    // Create a new Date object from the input string
     const date = new Date(dateString);
-  
-    // Get the day, month, and year
-    const day = String(date.getDate()).padStart(2, '0'); // Add leading zero if needed
-    const month = String(date.getMonth() + 1).padStart(2, '0'); // getMonth() is zero-based, so add 1
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0');
     const year = date.getFullYear();
-  
-    // Return the date in dd/mm/yyyy format
     return `${day}/${month}/${year}`;
   }
+
   return (
-    
-   <>
+    <>
       <Helmet>
         <title>Blog Details | Gandhi Travels Blog</title>
         <meta
@@ -58,55 +52,67 @@ const Blog = () => {
         />
         <link rel="canonical" href="https://gandhitravels.co.in/blogdetail" />
       </Helmet>
-   <Pagetop pagetop_text="Blogs" /> <div className="blog-parent parent">
-   <div className="blog-cont cont" data-aos="fade-up">
-     <div className="card-box" data-aos="fade-up" data-aos-delay="200">
-       {data &&
-         data.slice(0, visibleblog).map((blog, index) => {
-           const imageUrl =
-             blog._embedded["wp:featuredmedia"] &&
-             blog._embedded["wp:featuredmedia"][0].source_url;
+      
+      <Pagetop pagetop_text="Blogs" />
 
-           const category =
-             blog._embedded["wp:term"] &&
-             blog._embedded["wp:term"][0][0].name;
+      <div className="blog-parent parent">
+        <div className="blog-cont cont">
+          <div className="card-box" data-aos="fade-up" data-aos-delay="200">
+            {data &&
+              data.slice(0, visibleblog).map((blog, index) => {
+                const imageUrl =
+                  blog._embedded["wp:featuredmedia"] &&
+                  blog._embedded["wp:featuredmedia"][0].source_url;
 
-           return (
-             <Link
-               to={`/blogs/${blog.id}`}
-               className="card-link"
-               key={index}
-             >
-               <div className="card">
-                 <div className="card-data">
-                   <div
-                     className="card-image bg-img-cover"
-                     style={{ backgroundImage: `url(${imageUrl})` }}
-                   ></div>
-                   <h4 className="card-title">{blog.title.rendered}</h4>
-                   <p
-                     className="short-desc"
-                     dangerouslySetInnerHTML={{
-                       __html: blog.excerpt.rendered.slice(0, 150),
-                     }}
-                   ></p>
-                 </div>
-                 <div className="bottom-card">
-                   <div className="category">{category}</div>
-                   <div className="date">{ formatDate(blog.date)}</div>
-                 </div>
-               </div>
-             </Link>
-           );
-         })}
-     </div>
-     {visibleblog < data.length && (
-       <div className="load-more">
-         <button className="btn" onClick={loadMoreBlogs}>Load More Blog</button>
-       </div>
-     )}
-   </div>
- </div></>
+                const category =
+                  blog._embedded["wp:term"] &&
+                  blog._embedded["wp:term"][0][0].name;
+
+                return (
+                  <Link to={`/blogs/${blog.id}`} className="card-link" key={index}>
+                    <div className="card" data-aos="fade-up" data-aos-delay="300">
+                      <div className="card-data">
+                        <div
+                          className="card-image bg-img-cover"
+                          style={{ backgroundImage: `url(${imageUrl})` }}
+                          data-aos="zoom-in"
+                        ></div>
+                        <h4 className="card-title" data-aos="fade-up" data-aos-delay="400">
+                          {blog.title.rendered}
+                        </h4>
+                        <p
+                          className="short-desc"
+                          dangerouslySetInnerHTML={{
+                            __html: blog.excerpt.rendered.slice(0, 150),
+                          }}
+                          data-aos="fade-up"
+                          data-aos-delay="500"
+                        ></p>
+                      </div>
+                      <div className="bottom-card">
+                        <div className="category" data-aos="fade-left" data-aos-delay="600">
+                          {category}
+                        </div>
+                        <div className="date" data-aos="fade-right" data-aos-delay="700">
+                          {formatDate(blog.date)}
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+          </div>
+
+          {visibleblog < data.length && (
+            <div className="load-more" data-aos="fade-up" data-aos-delay="800">
+              <button className="btn" onClick={loadMoreBlogs}>
+                Load More Blog
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
   );
 };
 
