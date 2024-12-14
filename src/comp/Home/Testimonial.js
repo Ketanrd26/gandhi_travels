@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import "./testimonial.scss";
 //Bus Images 
-import img1 from "../../assests/testimoneal/test_1.jpeg";
+import img1 from "../../assests/testimoneal/test_1.webp";
 import img2 from "../../assests/testimoneal/test_2.jpeg";
 import img3 from "../../assests/testimoneal/test_3.jpeg";
 import img4 from "../../assests/testimoneal/test_4.jpeg";
@@ -29,8 +29,6 @@ const Testimonial = () => {
       id: 1,
       leftTop: img1,
       leftBottom: img2,
-      middleTop: img3,
-      middleBottom: img4,
       rightTop: img5,
       rightBottom: img6,
     },
@@ -38,10 +36,15 @@ const Testimonial = () => {
       id: 2,
       leftTop: img7,
       leftBottom: img8,
-      middleTop: img9,
-      middleBottom: img10,
       rightTop: img11,
       rightBottom: img12,
+    },
+    {
+      id: 3,
+      leftTop: img3,
+      leftBottom: img4,
+      rightTop: img9,
+      rightBottom: img10,
     },
     
   ];
@@ -106,7 +109,7 @@ const Testimonial = () => {
                       <img src={image.leftBottom} alt=""/>
                   </div>
                 </div>
-                <div className="middle-card">
+                {/* <div className="middle-card">
                   <div
                     className="top bg-img-cover"
              
@@ -121,7 +124,7 @@ const Testimonial = () => {
                   >
                      <img src={image.middleBottom} alt=""/>
                   </div>
-                </div>
+                </div> */}
                 <div className="right-card">
                   <div
                     className="top bg-img-cover"
