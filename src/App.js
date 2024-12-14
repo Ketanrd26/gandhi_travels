@@ -10,6 +10,8 @@ import Blog from "./pages/blog/Blog";
 import BlogDetailPage from "./pages/blogdetails/BlogDetail";
 import ScrollToTop from "../src/comp/scrolltotop/ScrollToTop";
 import { useState, useEffect } from "react";
+import Term from "./pages/Term";
+import Privacy from "./pages/Privacy";
 
 function App() {
   const [vehicleDataTransfer, setVehicleDataTransfer] = useState(0);
@@ -56,6 +58,8 @@ function App() {
           <Route path="/blogs" element={<Blog />} />
           <Route path="/blogs/:id" element={<BlogDetailPage />} />
           <Route path="/contactus" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/term_conditions" element={<Term /> } />
         </Routes>
         <Footer />
       </BrowserRouter>

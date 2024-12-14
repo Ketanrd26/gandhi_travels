@@ -54,7 +54,7 @@ const Footer = () => {
       <div class="footer-parent parent">
         <div class="footer-cont cont">
           <div class="gandhi-about">
-            <img src={logo} alt="" />
+           <Link to="/"> <img src={logo} alt="" /></Link>
             <p>
               Gandhi Travels offers top-notch car rental services across Pune
               and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to
@@ -69,8 +69,8 @@ const Footer = () => {
             ))}
           </div>
           <div class="privacy">
-            <Link>Privacy Policies</Link>
-            <Link>Cookies Policy</Link>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/term_conditions">Term And Conditions</Link>
           </div>
           <div class="last">
             <h4>Get in touch</h4>
