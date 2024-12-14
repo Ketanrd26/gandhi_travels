@@ -81,7 +81,7 @@ const Footer = () => {
               <a target="blank" href="https://wa.me/+918308988188" class="icons">
                 <FaWhatsapp />
               </a>
-              <a target="blank" href="tel:+918308988188" class="icons">
+              <a href="tel:+918308988188" class="icons">
                 <IoCall />
               </a>
               <a target="blank" href="mailto:arpit.gandhi26@gmail.com" class="icons">
