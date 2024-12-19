@@ -45,10 +45,10 @@ const Home = ({ setVehicleDataTransfer }) => {
       </div>
 
       {/* Second Section */}
-      <div className="home-about-parent parent" data-aos="fade-down">
+      <div className="home-about-parent parent" >
         <div className="home-about-cont cont">
           <h2>About Us</h2>
-          <div className="main-section">
+          <div className="main-section" data-aos="fade-down">
             <div className="left-box bg-img-contain" data-aos="fade-up"></div>
             <div className="right-box" data-aos="fade-up">
               <p>
