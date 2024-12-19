@@ -3,6 +3,7 @@ import "./footer.scss";
 import logo from "../../assests/logo.png";
 import { Link } from "react-router-dom";
 import video from "../../assests/footer_video.mp4";
+import video_webm from "../../assests/footer_video.webm";
 import ReactPlayer from "react-player";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
@@ -33,7 +34,7 @@ const Footer = () => {
         <div class="before_footer_cont cont">
           <div class="video-section">
             <ReactPlayer
-              url={video}
+              url={video_webm}
               playing={true}
               muted={true}
               controls={false}
