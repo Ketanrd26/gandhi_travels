@@ -104,7 +104,7 @@ const Footer = () => {
       <div class="after_footer parent">
         <div class="after_footer_cont cont">
           <a href="https://wa.me/+917028997574">
-            Developed By RK
+            Developed By wave solution's
           </a>
           <p>
             @copyright / Gandhi's travels
