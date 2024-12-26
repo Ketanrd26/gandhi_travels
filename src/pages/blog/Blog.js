@@ -13,7 +13,7 @@ const Blog = () => {
   const fetchBlogs = async () => {
     try {
       const response = await axios.get(
-        "https://headless.pandozasolutions.com/wp-json/wp/v2/posts?_embed"
+        "https://api.gandhitravels.co.in/wp-json/wp/v2/posts?_embed"
       );
       setData(response.data);
     } catch (err) {
