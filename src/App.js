@@ -7,11 +7,12 @@ import Footer from "./comp/footer/Footer";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Blog from "./pages/blog/Blog";
-import BlogDetailPage from "./pages/blogdetails/BlogDetail";
 import ScrollToTop from "../src/comp/scrolltotop/ScrollToTop";
 import { useState, useEffect } from "react";
 import Term from "./pages/Term";
 import Privacy from "./pages/Privacy";
+
+import BlogDetail from "./pages/blogdetails/BlogDetail";
 
 function App() {
   const [vehicleDataTransfer, setVehicleDataTransfer] = useState(0);
@@ -56,10 +57,13 @@ function App() {
             }
           />
           <Route path="/blogs" element={<Blog />} />
-          <Route path="/blogs/:id" element={<BlogDetailPage />} />
+          {/* <Route path="/blogs/:id" element={<BlogDetailPage />} /> */}
+
           <Route path="/contactus" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/term_conditions" element={<Term /> } />
+          <Route path="/blogs/:slug" element={<BlogDetail />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

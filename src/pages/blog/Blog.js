@@ -69,7 +69,7 @@ const Blog = () => {
                   blog._embedded["wp:term"][0][0].name;
 
                 return (
-                  <Link to={`/blogs/${blog.id}`} className="card-link" key={index}>
+                  <Link to={`/blogs/${blog.slug}`} key={blog.id}className="card-link" >
                     <div className="card" data-aos="fade-up" data-aos-delay="300">
                       <div className="card-data">
                         <div

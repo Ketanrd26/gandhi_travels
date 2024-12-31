@@ -18,14 +18,19 @@
     
     .blog-content {
       background: #fff;
-      padding: 30px;
+      padding: 10px 0px;
       border-radius: 10px;
     }
     
     .blog-meta {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      .blog-category,.blog-date{
+        font-size:14px;
+      }
+      
+      
     }
     
     // .blog-category {
@@ -54,6 +59,13 @@
       p 
       {
         max-width: fit-content !important;
+        a{
+          font-size:18px;
+          color:var(--accent);
+        }
+        strong{
+          font-size:20px;
+        }
       }
     }
     

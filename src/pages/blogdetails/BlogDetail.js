@@ -5,36 +5,36 @@ import { useParams } from "react-router-dom";
 import Pagetop from "../../comp/pagetop/Pagetop";
 
 const BlogDetailPage = () => {
-  const { id } = useParams();
-  const [data, setData] = useState(null);
+  const { slug } = useParams();
+  const [post, setPost] = useState(null);
   console.log("loading ");
-  const fetchBlogs = async () => {
+  const fetchPost = async () => {
     try {
       const response = await axios.get(
-        `https://api.gandhitravels.co.in/wp-json/wp/v2/posts/${id}?_embed`
+        `https://api.gandhitravels.co.in/wp-json/wp/v2/posts?slug=${slug}&_embed`
       );
-      setData(response.data);
-    } catch (err) {
-      console.log(err);
+      setPost(response.data[0]); // Assuming the API returns an array with a single post
+    } catch (error) {
+      console.error("Error fetching post:", error);
     }
   };
 
   useEffect(() => {
-    fetchBlogs();
-  }, [id]);
+    fetchPost();
+  }, [slug]);
 
-  if (!data) {
+  if (!post) {
     return <div>Loading...</div>;
   }
 
   const imageUrl =
-    data._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+    post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
     "/default-image.jpg"; // Fallback image
   const category =
-    data._embedded?.["wp:term"]?.[0]?.[0]?.name || "Uncategorized";
-  const title = data.title.rendered;
-  const date = new Date(data.date).toLocaleDateString();
-  const content = data.content.rendered;
+    post._embedded?.["wp:term"]?.[0]?.[0]?.name || "Uncategorized";
+  const title = post.title.rendered;
+  const date = new Date(post.date).toLocaleDateString();
+  const content = post.content.rendered;
 
   return (
 
