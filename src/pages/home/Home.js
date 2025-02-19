@@ -133,15 +133,15 @@ const Home = ({ setVehicleDataTransfer }) => {
 
       {/* Fourth Section */}
       <div className="forth-sec-parent bg-img-cover parent" data-aos="fade-up">
-        <div className="overlay"></div>
-        <h2>Luxury, Comfort, and Versatility – Our Vehicles</h2>
+        {/* <div className="overlay"></div>
+        <h2>Luxury, Comfort, and Versatility – Our Vehicles</h2> */}
         <div className="forth-sec-cont cont">
           <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
         </div>
       </div>
 
       {/* Fifth Section */}
-      <div className="fifth-section-parent parent" data-aos="fade-up">
+      <div className="fifth-section-parent parent" >
         <div className="fifth-section-cont cont">
           <h2>
             Our <span>Customer Reviews</span>

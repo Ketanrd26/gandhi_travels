@@ -77,12 +77,12 @@ const Cardswiper = ({setVehicleDataTransfer}) => {
 
   return (
     <>
-      <Swiper
+      {/* <Swiper
         slidesPerView={3}
         spaceBetween={30}
         autoplay={{
           delay: 3000, // Time in milliseconds (3 seconds)
-          disableOnInteraction: false, // Keeps autoplay running after user interaction
+          disableOnInteraction: false,
         }}
         modules={[Pagination, Autoplay]}
         pagination={{
@@ -122,7 +122,29 @@ const Cardswiper = ({setVehicleDataTransfer}) => {
             </a>
           </SwiperSlide>
         ))}
-      </Swiper>
+      </Swiper> */}
+
+
+      {/* //new code  */}
+      <div className="about-section-parent parent ">
+            <div className="about-section-cont cont">
+        
+                <div className="card-box" >
+                {vehicledesc.map((card, index) => (
+                   <a href={card.link} key={card.id} onClick={()=>vehicleData(index)} className="card-link" >
+                  
+                    <div className="card" >
+                        <div className="card-img bg-img-cover" style={{ backgroundImage: `url(${card.vehicle_image})` }}></div>
+                        <h4>{card.vehicle_name}</h4>
+                    </div>
+                   
+                    </a>
+                     ))}
+
+                </div>
+                 
+            </div>
+         </div>
     </>
   );
 };
