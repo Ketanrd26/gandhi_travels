@@ -44,7 +44,17 @@ const Home = ({ setVehicleDataTransfer }) => {
         <Hero />
       </div>
 
-      {/* Second Section */}
+   
+
+      {/* Fourth Section */}
+      <div className="forth-sec-parent bg-img-cover parent" data-aos="fade-up">
+        {/* <div className="overlay"></div>
+        <h2>Luxury, Comfort, and Versatility – Our Vehicles</h2> */}
+        <div className="forth-sec-cont cont">
+          <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
+        </div>
+      </div>
+         {/* Second Section */}
       <div className="home-about-parent parent" >
         <div className="home-about-cont cont">
           <h2>About Us</h2>
@@ -131,15 +141,6 @@ const Home = ({ setVehicleDataTransfer }) => {
         </div>
       </div>
 
-      {/* Fourth Section */}
-      <div className="forth-sec-parent bg-img-cover parent" data-aos="fade-up">
-        {/* <div className="overlay"></div>
-        <h2>Luxury, Comfort, and Versatility – Our Vehicles</h2> */}
-        <div className="forth-sec-cont cont">
-          <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
-        </div>
-      </div>
-
       {/* Fifth Section */}
       <div className="fifth-section-parent parent" >
         <div className="fifth-section-cont cont">
@@ -153,11 +154,11 @@ const Home = ({ setVehicleDataTransfer }) => {
       </div>
 
       {/* Sixth Section */}
-      <div className="six-section-parent parent" data-aos="fade-up">
+      {/* <div className="six-section-parent parent" data-aos="fade-up">
         <div className="six-section-cont cont">
           <Gallerycard />
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

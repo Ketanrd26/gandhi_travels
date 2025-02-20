@@ -96,36 +96,6 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
     {
       image1: bus_icon,
       image2: bus_icon_fill,
-      vehicle_name: "Toyota glanza",
-    },
-    {
-      image1: bus_icon,
-      image2: bus_icon_fill,
-      vehicle_name: "New Ertiga",
-    },
-    {
-      image1: bus_icon,
-      image2: bus_icon_fill,
-      vehicle_name: "Luxury Urbania",
-    },
-    {
-      image1: bus_icon,
-      image2: bus_icon_fill,
-      vehicle_name: "KIa Sonnet",
-    },
-    {
-      image1: kia_carnes_icon,
-      image2: kia_carnes_icon_fill,
-      vehicle_name: "Kia Carnes SUV",
-    },
-    {
-      image1: kia_carnes_icon,
-      image2: kia_carnes_icon_fill,
-      vehicle_name: "Innova Crysta",
-    },
-    {
-      image1: bus_icon,
-      image2: bus_icon_fill,
       vehicle_name: "45 AC volvo eicher",
     },
     {
@@ -136,13 +106,50 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
     {
       image1: bus_icon,
       image2: bus_icon_fill,
-      vehicle_name: "26 Seater modifeid luxury",
+      vehicle_name: "20 seater Ac Pushback Bus",
     },
     {
       image1: bus_icon,
       image2: bus_icon_fill,
-      vehicle_name: "20 seater Ac Pushback Bus",
+      vehicle_name: "Luxury Urbania",
     },
+    {
+      image1: kia_carnes_icon,
+      image2: kia_carnes_icon_fill,
+      vehicle_name: "Kia Carnes SUV",
+    },
+    {
+      image1: bus_icon,
+      image2: bus_icon_fill,
+      vehicle_name: "26 Seater modifeid luxury",
+    },
+      
+    {
+      image1: kia_carnes_icon,
+      image2: kia_carnes_icon_fill,
+      vehicle_name: "Innova Crysta",
+    },
+    {
+      image1: bus_icon,
+      image2: bus_icon_fill,
+      vehicle_name: "Toyota glanza",
+    },
+    {
+      image1: bus_icon,
+      image2: bus_icon_fill,
+      vehicle_name: "New Ertiga",
+    },
+   
+    {
+      image1: bus_icon,
+      image2: bus_icon_fill,
+      vehicle_name: "KIa Sonnet",
+    },
+  
+   
+  
+
+  
     {
       image1: bus_icon,
       image2: bus_icon_fill,
@@ -151,6 +158,61 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
   ];
 
   const vehicledesc = [
+    {
+      vehicle_image: bus,
+      vehicle_name: "45 AC volvo eicher",
+      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
+      vehicle_desc:
+        "The 45-seater AC Volvo Eicher is ideal for large group tours, school trips, or corporate outings. Known for its comfortable seating and smooth suspension, it ensures an enjoyable ride for long journeys.",
+    },
+
+
+    {
+      vehicle_image: bhartbenz_hero,
+      vehicle_name: "35 AC Bharatbenz",
+      image: [bt1, bt2, bt3, bt4, bhartbenz_hero],
+      vehicle_desc:
+        "The 35-seater AC BharatBenz is perfect for medium-sized group travel. Its modern features and air-conditioned interiors make it a top choice for pilgrimage tours, destination weddings, or corporate events.",
+    },
+
+    {
+      vehicle_image: seater_ac_hero,
+      vehicle_name: "20 seater Ac Pushback Bus",
+      image: [sp1, sp2, sp3, sp4, sp5],
+      vehicle_desc:
+        "The 20-seater AC pushback bus is perfect for small group tours. Its reclining seats and ample legroom make it ideal for intercity travel, family trips, or office outings.",
+    },
+    {
+      vehicle_image: luxury_urbania_hero,
+      vehicle_name: "Luxury Urbania",
+      image: [urb1, urb2, urb3, urb4, urb5],
+      vehicle_desc:
+        "The Luxury Urbania redefines premium travel with its modern design and top-notch features. Perfect for corporate travel or VIP tours, this vehicle combines elegance with a luxurious ride experience.",
+    },
+
+    {
+      vehicle_image: kia_carnes_suv_hero,
+      vehicle_name: "Kia Carnes SUV",
+      image: [kia_car_1, kia_car_2, kia_car_3, kia_car_4, kia_car_5],
+      vehicle_desc:
+        "The Kia Carens offers versatility and comfort for family vacations or business trips. Its spacious interiors and high-end features make it a reliable choice for outstation trips or long drives.",
+    },
+
+    {
+      vehicle_image: modified_luxury,
+      vehicle_name: "26 Seater modifeid luxury",
+      image: [ml1, ml2, ml3, ml4, ml5],
+      vehicle_desc:
+        "This 26-seater luxury bus is designed for a premium group travel experience. With its plush seating and modified interiors, it’s ideal for VIP tours, destination weddings, or exclusive group outings.",
+    },
+
+    {
+      vehicle_image: innova_crysta_hero,
+      vehicle_name: "Innova Crysta",
+      image: [innova1, innova2, innova3, innova4, innova_crysta_hero],
+      vehicle_desc:
+        "The Toyota Innova Crysta is a trusted name for luxury family travel or corporate tours. Its spacious seating, powerful engine, and refined interiors make it the best choice for outstation trips or executive travel.",
+    },
     {
       vehicle_image: bus,
       vehicle_name: "Toyota glanza",
@@ -165,13 +227,7 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
       vehicle_desc:
         "The New Ertiga is a spacious 7-seater MPV, ideal for family vacations or group outings. With its advanced safety features and ample luggage space, it ensures a comfortable ride for long journeys or airport transfers.",
     },
-    {
-      vehicle_image: luxury_urbania_hero,
-      vehicle_name: "Luxury Urbania",
-      image: [urb1, urb2, urb3, urb4, urb5],
-      vehicle_desc:
-        "The Luxury Urbania redefines premium travel with its modern design and top-notch features. Perfect for corporate travel or VIP tours, this vehicle combines elegance with a luxurious ride experience.",
-    },
+   
     {
       vehicle_image: bus,
       vehicle_name: "KIa Sonnet",
@@ -179,48 +235,11 @@ const Vehicels = ({vehicleDataTransfer,setVehicleDataTransfer}) => {
       vehicle_desc:
         "A stylish and compact SUV, the Kia Sonet is perfect for couples or small groups exploring city attractions or nearby tourist destinations. Its cutting-edge technology ensures a safe and enjoyable journey for weekend getaways.",
     },
-    {
-      vehicle_image: kia_carnes_suv_hero,
-      vehicle_name: "Kia Carnes SUV",
-      image: [kia_car_1, kia_car_2, kia_car_3, kia_car_4, kia_car_5],
-      vehicle_desc:
-        "The Kia Carens offers versatility and comfort for family vacations or business trips. Its spacious interiors and high-end features make it a reliable choice for outstation trips or long drives.",
-    },
-    {
-      vehicle_image: innova_crysta_hero,
-      vehicle_name: "Innova Crysta",
-      image: [innova1, innova2, innova3, innova4, innova_crysta_hero],
-      vehicle_desc:
-        "The Toyota Innova Crysta is a trusted name for luxury family travel or corporate tours. Its spacious seating, powerful engine, and refined interiors make it the best choice for outstation trips or executive travel.",
-    },
-    {
-      vehicle_image: bus,
-      vehicle_name: "45 AC volvo eicher",
-      image: [volvo1, volvo2, volvo3, volvo4, volvo5],
-      vehicle_desc:
-        "The 45-seater AC Volvo Eicher is ideal for large group tours, school trips, or corporate outings. Known for its comfortable seating and smooth suspension, it ensures an enjoyable ride for long journeys.",
-    },
-    {
-      vehicle_image: bhartbenz_hero,
-      vehicle_name: "35 AC Bharatbenz",
-      image: [bt1, bt2, bt3, bt4, bhartbenz_hero],
-      vehicle_desc:
-        "The 35-seater AC BharatBenz is perfect for medium-sized group travel. Its modern features and air-conditioned interiors make it a top choice for pilgrimage tours, destination weddings, or corporate events.",
-    },
-    {
-      vehicle_image: modified_luxury,
-      vehicle_name: "26 Seater modifeid luxury",
-      image: [ml1, ml2, ml3, ml4, ml5],
-      vehicle_desc:
-        "This 26-seater luxury bus is designed for a premium group travel experience. With its plush seating and modified interiors, it’s ideal for VIP tours, destination weddings, or exclusive group outings.",
-    },
-    {
-      vehicle_image: seater_ac_hero,
-      vehicle_name: "20 seater Ac Pushback Bus",
-      image: [sp1, sp2, sp3, sp4, sp5],
-      vehicle_desc:
-        "The 20-seater AC pushback bus is perfect for small group tours. Its reclining seats and ample legroom make it ideal for intercity travel, family trips, or office outings.",
-    },
+  
+  
+
+   
+ 
     {
       vehicle_image: seater_bus_hero,
       vehicle_name: "17 Seater Ac Pushback Bus",

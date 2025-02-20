@@ -49,24 +49,27 @@
       flex-wrap: wrap;
       .card-link {
         display: flex;
-        width: calc(100% / 3 - 20px);
-        flex-direction: row !important;
-        .card {
-          padding: 10px;
-          gap: 10px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
+        width: 350px;
+        padding: 10px;
+        gap: 10px;
+        
+        flex-direction: column;
+        align-items: center;
+       
+         
+     
           .card-img {
             // background: url("https://img.freepik.com/free-photo/close-up-watering-plants-with-sprinkler_23-2148396763.jpg?t=st=1739873630~exp=1739877230~hmac=a09b605f5cb1b6b67dbb38d53aea45be5bcd6bf33c3f3b63deb1beb86ea0d2ac&w=1380");
-            height: 350px;
+            
             width: 100%;
+            img{
+              width:100%;
+            }
           }
           h4 {
             font-size: 20px;
           }
-        }
+        
       }
     
     }
