@@ -87,12 +87,12 @@ const Hero = () => {
               style={{ backgroundImage: `url(${!isMobile ? slide.image : slide.mob_image})` }}
               data-aos="fade-down" // Add AOS animation for individual slides
             >
-              {slide.overlay && <div className="overlay"></div>}
+              {/* {slide.overlay && <div className="overlay"></div>} */}
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="hero-cont" data-aos="fade-down">
+      {/* <div className="hero-cont" data-aos="fade-down">
         <h1 className="hero-heading heading">Gandhi's Travels</h1>
         <div className="desc">
           Gandhi Travels offers seamless services for airport drops, outstation
@@ -107,7 +107,7 @@ const Hero = () => {
             About Us
           </a>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

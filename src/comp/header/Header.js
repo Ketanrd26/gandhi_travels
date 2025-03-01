@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./header.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assests/logo.png";
 import black_logo from "../../assests/black_logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -27,10 +27,10 @@ const Header = () => {
   ];
 
   const [scrolled, setScrolled] = useState(false);
-
+const location = useLocation();
   useEffect(() => {
     const scrollnav = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -43,6 +43,14 @@ const Header = () => {
       document.removeEventListener("scroll", scrollnav);
     };
   }, []);
+
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setScrolled(true);
+    } else {
+      setScrolled(false); // Reset for home page
+    }
+  }, [location]);
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (

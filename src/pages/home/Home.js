@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import "./home.scss";
 import { GoPackage } from "react-icons/go";
-
+import logo from "../../assests/black_logo.png";
+import logo2 from "../../assests/insta logo.webp";
 import Cardswiper from "../../comp/Home/Cardswiper";
 import Testimonial from "../../comp/Home/Testimonial";
 import Gallerycard from "../../comp/Home/Gallerycard";
@@ -11,6 +12,8 @@ import Hero from "../../comp/Home/Hero";
 // AOS import
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import { Link } from "react-router-dom";
 
 const Home = ({ setVehicleDataTransfer }) => {
   // Initialize AOS
@@ -38,13 +41,56 @@ const Home = ({ setVehicleDataTransfer }) => {
         />
         <link rel="canonical" href="https://gandhitravels.co.in/" />
       </Helmet>
+      <div className="new-top-bar-parent parent">
+        <div className="new-top-bar-cont cont">
+          <div className="left-top">
+            <Link to="/" className="logo bg-img-cover">
+              <img src={logo} />
+            </Link>
+            <p className="contact">
+              Contact Us: <a href="tel:8308988188">8308988188</a> /{" "}
+              <a href="tel:9822008188">9822008188</a>{" "}
+            </p>
+          </div>
+          <div className="right-top">
+            <div className="logo bg-img-contain">
+              <img src={logo2} />
+            </div>
+            <p className="insta-id">
+              <a
+                href="https://www.instagram.com/gandhi_travels_pune/?igsh=MXh5NXI4aGN6aWtmMg#"
+                target="_blank"
+              >
+                @gandhi_travels_pune
+              </a>
+            </p>
 
+            <p className="Email">
+              Email Id:{" "}
+              <a href="mailto:arpit.gandhi26@gmail.com">
+                arpit.gandhi26@gmail.com
+              </a>{" "}
+              /{" "}
+              <a
+                href="
+amargandhi1975@gmail.com"
+              >
+                amargandhi1975@gmail.com
+              </a>{" "}
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* //top bar //  */}
+      <div className="top-bar-parent parent">
+        <p>We Provide All Types Of Cars & Buses On Rent</p>
+      </div>
+
+  
       {/* First Section */}
       <div className="home-parent parent" data-aos="fade-up">
         <Hero />
       </div>
-
-   
 
       {/* Fourth Section */}
       <div className="forth-sec-parent bg-img-cover parent" data-aos="fade-up">
@@ -54,15 +100,22 @@ const Home = ({ setVehicleDataTransfer }) => {
           <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
         </div>
       </div>
-         {/* Second Section */}
-      <div className="home-about-parent parent" >
+      {/* Second Section */}
+      <div className="home-about-parent parent">
         <div className="home-about-cont cont">
           <h2>About Us</h2>
           <div className="main-section" data-aos="fade-down">
             <div className="left-box bg-img-contain" data-aos="fade-up"></div>
             <div className="right-box" data-aos="fade-up">
               <p>
-                Gandhi Travels offers top-notch car rental services across Pune and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to Airport Drops and Luxury Rentals, we cater to all your travel needs. With a diverse fleet, including Honda City, Innova with Driver, and Tempo Travellers, we ensure every journey is comfortable and reliable. Whether it's a trip to Lonavala, Goa, or corporate travel within Pune, Gandhi Travels is your trusted partner for safe and seamless travel.
+                Gandhi Travels offers top-notch car rental services across Pune
+                and beyond. From Pune to Shirdi Cabs and Mumbai One-Way Taxis to
+                Airport Drops and Luxury Rentals, we cater to all your travel
+                needs. With a diverse fleet, including Honda City, Innova with
+                Driver, and Tempo Travellers, we ensure every journey is
+                comfortable and reliable. Whether it's a trip to Lonavala, Goa,
+                or corporate travel within Pune, Gandhi Travels is your trusted
+                partner for safe and seamless travel.
               </p>
               <a href="/about" className="btn">
                 Read More
@@ -80,7 +133,11 @@ const Home = ({ setVehicleDataTransfer }) => {
             <div className="left-fac" data-aos="fade-up">
               <h4>Our Premium Travel Facilities</h4>
               <p>
-                At Gandhi Travels, we prioritize your comfort with top-notch facilities. From well-maintained vehicles to professional drivers, we ensure a smooth, safe, and enjoyable journey. Enjoy flexible booking options, luxury amenities, and reliable services for every trip.
+                At Gandhi Travels, we prioritize your comfort with top-notch
+                facilities. From well-maintained vehicles to professional
+                drivers, we ensure a smooth, safe, and enjoyable journey. Enjoy
+                flexible booking options, luxury amenities, and reliable
+                services for every trip.
               </p>
             </div>
             <div className="right-fac">
@@ -94,7 +151,8 @@ const Home = ({ setVehicleDataTransfer }) => {
                   </div>
                   <h5>Reliable Service</h5>
                   <p>
-                    Professional drivers and timely pickups for a hassle-free travel experience.
+                    Professional drivers and timely pickups for a hassle-free
+                    travel experience.
                   </p>
                 </div>
                 <div className="box2" data-aos="fade-up" data-aos-delay="200">
@@ -119,9 +177,7 @@ const Home = ({ setVehicleDataTransfer }) => {
                     </div>
                   </div>
                   <h5>Affordable Pricing</h5>
-                  <p>
-                    Competitive rates for high-quality travel services.
-                  </p>
+                  <p>Competitive rates for high-quality travel services.</p>
                 </div>
                 <div className="box4" data-aos="fade-up" data-aos-delay="400">
                   <div className="card-head">
@@ -131,9 +187,7 @@ const Home = ({ setVehicleDataTransfer }) => {
                     </div>
                   </div>
                   <h5>Wide Range of Vehicles</h5>
-                  <p>
-                    Choose from luxury cars, SUVs, and tempo travellers.
-                  </p>
+                  <p>Choose from luxury cars, SUVs, and tempo travellers.</p>
                 </div>
               </div>
             </div>
@@ -142,7 +196,7 @@ const Home = ({ setVehicleDataTransfer }) => {
       </div>
 
       {/* Fifth Section */}
-      <div className="fifth-section-parent parent" >
+      <div className="fifth-section-parent parent">
         <div className="fifth-section-cont cont">
           <h2>
             Our <span>Customer Reviews</span>

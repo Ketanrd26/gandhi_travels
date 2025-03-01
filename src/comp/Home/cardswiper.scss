@@ -44,15 +44,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      // gap: 20px;
       width: 100%;
+      // width:calc(100% / 3 );
+     
       flex-wrap: wrap;
       .card-link {
         display: flex;
-        width: 350px;
+        width: calc(100% / 3);
         padding: 10px;
         gap: 10px;
-        
         flex-direction: column;
         align-items: center;
        
@@ -70,6 +71,21 @@
             font-size: 20px;
           }
         
+      }
+      @media only screen and (max-width:700px){
+        .card-link{
+          h4{
+            font-size:14px;
+          }
+        }
+      }
+      @media only screen and (max-width:500px){
+        .card-link{
+          h4{
+            font-size:12px;
+            font-weight: 400 !important;
+          }
+        }
       }
     
     }
