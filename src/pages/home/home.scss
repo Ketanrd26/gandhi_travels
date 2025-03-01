@@ -24,7 +24,7 @@
         align-items: center;
         gap: 10px;
 
-        span{
+        span {
           font-size: 14px;
         }
         a {
@@ -102,7 +102,6 @@
   }
 }
 
-
 // First Section
 .home-parent {
 }
@@ -115,7 +114,7 @@
 
     padding: 50px 0px;
     h2 {
-      padding-bottom: 40px;
+      // padding-bottom: 40px;
     }
     .main-section {
       display: flex;
@@ -346,8 +345,14 @@
   }
 }
 
-
 @media only screen and (max-width: 420px) {
+  .top-bar-parent {
+    padding: 10px;
+
+    p {
+      font-size: 12px;
+    }
+  }
   p {
     font-size: 14px;
   }

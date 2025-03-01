@@ -91,3 +91,20 @@
     }
   }
 // }
+
+
+@media only screen and (max-width:500px) {
+  .about-section-parent{
+    padding: 20px 10px;
+
+    .card-box{
+      align-items: flex-start;
+      .card-link{
+        
+        h4{
+          text-align: center !important;
+        }
+      }
+    }
+  }
+}

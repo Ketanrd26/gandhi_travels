@@ -94,12 +94,13 @@ amargandhi1975@gmail.com"
 
       {/* Fourth Section */}
       <div className="forth-sec-parent bg-img-cover parent" data-aos="fade-up">
-        {/* <div className="overlay"></div>
+      <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
+      </div>
+       {/* <div className="overlay"></div>
         <h2>Luxury, Comfort, and Versatility – Our Vehicles</h2> */}
         {/* <div className="forth-sec-cont cont"> */}
-          <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
+          
         {/* </div> */}
-      </div>
       {/* Second Section */}
       <div className="home-about-parent parent">
         <div className="home-about-cont cont">
