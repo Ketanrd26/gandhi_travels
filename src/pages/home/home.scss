@@ -102,53 +102,7 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
-  p {
-    font-size: 14px;
-  }
 
-  .new-top-bar-parent {
-    .new-top-bar-cont {
-      .left-top {
-        .contact {
-          display: flex !important;
-          justify-content: center;
-          align-items: center;
-
-          span {
-            font-size: 10px !important;
-            width: 60px;
-          }
-
-          a {
-            font-size: 10px !important;
-          }
-        }
-      }
-
-      .right-top {
-        img {
-          width: 30px !important;
-          height: 30px !important;
-        }
-
-        .insta-id {
-          a {
-            font-size: 12px;
-          }
-        }
-
-        .Email {
-          font-size: 10px;
-
-          a {
-            font-size: 10px;
-          }
-        }
-      }
-    }
-  }
-}
 // First Section
 .home-parent {
 }
@@ -388,6 +342,57 @@
     }
     .test {
       padding-top: 50px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 420px) {
+  p {
+    font-size: 14px;
+  }
+
+  .new-top-bar-parent {
+    .new-top-bar-cont {
+      .left-top {
+        .contact {
+          display: flex !important;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+
+          span {
+            font-size: 10px !important;
+            width: 55px;
+          }
+
+          a {
+            font-size: 10px !important;
+          }
+        }
+      }
+
+      .right-top {
+        img {
+          width: 30px !important;
+          height: 30px !important;
+        }
+
+        .insta-id {
+          a {
+            font-size: 12px;
+          }
+        }
+
+        .Email {
+          font-size: 10px;
+
+          a {
+            font-size: 10px;
+            text-align: end;
+          }
+        }
+      }
     }
   }
 }

@@ -36,14 +36,12 @@ import img8 from "../../assests/vehicles/vovlo/image_5.jpg";
 
 // mobile image
 
-import mob_img1 from "../../assests/mobile_photos/img1.jpg";
-import mob_img2 from "../../assests/mobile_photos/img2.jpg";
-import mob_img3 from "../../assests/mobile_photos/img3.jpg";
-import mob_img4 from "../../assests/mobile_photos/img4.png";
+import mob_img1 from "../../assests/mobile_photos/img1.png";
+import mob_img2 from "../../assests/mobile_photos/img2.jpeg";
+import mob_img3 from "../../assests/mobile_photos/img3.png";
+import mob_img4 from "../../assests/mobile_photos/img4.jpg";
 import mob_img5 from "../../assests/mobile_photos/img5.png";
-import mob_img6 from "../../assests/mobile_photos/img6.png";
-import mob_img7 from "../../assests/mobile_photos/img7.png";
-import mob_img8 from "../../assests/mobile_photos/img8.png";
+
 
 const Hero = () => {
   useEffect(() => {
