@@ -137,7 +137,7 @@ const Cardswiper = ({setVehicleDataTransfer}) => {
 
       {/* //new code  */}
       <div className="about-section-parent parent ">
-            <div className="about-section-cont cont">
+            {/* <div className="about-section-cont cont"> */}
         
                 <div className="card-box" >
                 {vehicledesc.map((card, index) => (
@@ -153,7 +153,7 @@ const Cardswiper = ({setVehicleDataTransfer}) => {
 
                 </div>
                  
-            </div>
+            {/* </div> */}
          </div>
     </>
   );
