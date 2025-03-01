@@ -48,7 +48,7 @@ const Home = ({ setVehicleDataTransfer }) => {
               <img src={logo} />
             </Link>
             <p className="contact">
-              Contact Us: <a href="tel:8308988188">8308988188</a> /{" "}
+              <span>Contact Us:</span> <a href="tel:8308988188">8308988188</a> /{" "}
               <a href="tel:9822008188">9822008188</a>{" "}
             </p>
           </div>
@@ -66,11 +66,11 @@ const Home = ({ setVehicleDataTransfer }) => {
             </p>
 
             <p className="Email">
-              Email Id:{" "}
+             
               <a href="mailto:arpit.gandhi26@gmail.com">
-                arpit.gandhi26@gmail.com
+              Email Id:{" "} arpit.gandhi26@gmail.com
               </a>{" "}
-              /{" "}
+            
               <a
                 href="
 amargandhi1975@gmail.com"
