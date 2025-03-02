@@ -27,30 +27,31 @@ const Header = () => {
   ];
 
   const [scrolled, setScrolled] = useState(false);
-const location = useLocation();
+  const location = useLocation();
+  
   useEffect(() => {
     const scrollnav = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      if (location.pathname === "/") {
+        setScrolled(window.scrollY > 50);
       }
     };
-
+  
     document.addEventListener("scroll", scrollnav);
-
+  
     return () => {
       document.removeEventListener("scroll", scrollnav);
     };
-  }, []);
-
+  }, [location]);
+  
   useEffect(() => {
     if (location.pathname !== "/") {
-      setScrolled(true);
+      setScrolled(true); // Always true for non-home pages
     } else {
-      setScrolled(false); // Reset for home page
+      setScrolled(window.scrollY > 50); // Apply scroll effect only on home page
     }
   }, [location]);
+  
+  
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   return (

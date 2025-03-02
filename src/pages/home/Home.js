@@ -66,11 +66,9 @@ const Home = ({ setVehicleDataTransfer }) => {
             </p>
 
             <p className="Email">
-             
               <a href="mailto:arpit.gandhi26@gmail.com">
-              Email Id:{" "} arpit.gandhi26@gmail.com
+                Email Id: arpit.gandhi26@gmail.com
               </a>{" "}
-            
               <a
                 href="
 amargandhi1975@gmail.com"
@@ -86,7 +84,6 @@ amargandhi1975@gmail.com"
         <p>We Provide All Types Of Cars & Buses On Rent</p>
       </div>
 
-  
       {/* First Section */}
       <div className="home-parent parent" data-aos="fade-up">
         <Hero />
@@ -94,13 +91,13 @@ amargandhi1975@gmail.com"
 
       {/* Fourth Section */}
       <div className="forth-sec-parent bg-img-cover parent" data-aos="fade-up">
-      <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
+        <Cardswiper setVehicleDataTransfer={setVehicleDataTransfer} />
       </div>
-       {/* <div className="overlay"></div>
+      {/* <div className="overlay"></div>
         <h2>Luxury, Comfort, and Versatility – Our Vehicles</h2> */}
-        {/* <div className="forth-sec-cont cont"> */}
-          
-        {/* </div> */}
+      {/* <div className="forth-sec-cont cont"> */}
+
+      {/* </div> */}
       {/* Second Section */}
       <div className="home-about-parent parent">
         <div className="home-about-cont cont">
@@ -125,7 +122,11 @@ amargandhi1975@gmail.com"
           </div>
         </div>
       </div>
-
+      <div className="six-section-parent parent" data-aos="fade-up">
+        <div className="six-section-cont cont">
+          <Gallerycard />
+        </div>
+      </div>
       {/* Third Section */}
       <div className="home-fac-parent parent" data-aos="fade-up">
         <div className="home-fact-cont cont">
@@ -209,11 +210,6 @@ amargandhi1975@gmail.com"
       </div>
 
       {/* Sixth Section */}
-      {/* <div className="six-section-parent parent" data-aos="fade-up">
-        <div className="six-section-cont cont">
-          <Gallerycard />
-        </div>
-      </div> */}
     </>
   );
 };

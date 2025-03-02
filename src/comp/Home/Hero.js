@@ -63,10 +63,10 @@ const Hero = () => {
 
   const slides = [
    
-    { id: 1, image: img1, mob_image: mob_img2, overlay: true },
+    { id: 1, image: img1, mob_image: img2, overlay: true },
     { id: 2, image: img2, mob_image: mob_img1, overlay: true },
     { id: 3, image: img3, mob_image: mob_img3, overlay: true },
-    { id: 4, image: img4, mob_image: mob_img4, overlay: true },
+    { id: 4, image: img4, mob_image: img4, overlay: true },
     { id: 5, image: img5, mob_image: mob_img5, overlay: true },
     // { id: 6, image: img6, mob_image: mob_img6, overlay: true },
     // { id: 7, image: img7, mob_image: mob_img7, overlay: true },

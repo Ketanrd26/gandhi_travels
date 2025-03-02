@@ -7,22 +7,22 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
-import img1 from "../../assests/vehicles/17_s_pushback/17_SEATER_pushback.webp";
-import img2 from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
-import img3 from "../../assests/vehicles/26_s_modifeid_pushback/26_s_m_pushback.jpg";
-import img4 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
-import img5 from "../../assests/vehicles/innova_crysta/innova_cryst.jpg";
-import img6 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
+import img1 from "../../assests/assets/snap1.jpg";
+import img2 from "../../assests/assets/snap2.jpg";
+import img3 from "../../assests/assets/snap3.jpg";
+import img4 from "../../assests/assets/snap4.jpg";
+import img5 from "../../assests/assets/snap5.jpg";
+// import img6 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
 import img7 from "../../assests/vehicles/luxary_urbania/luxary_urbania.jpg";
 import img8 from "../../assests/vehicles/vovlo/image_5.jpg";
 import img9 from "../../assests/vehicles/kia_carnes/kia_car_2.webp";
 import img10 from "../../assests/vehicles/luxary_urbania/luxary_urbania.jpg";
 import img11 from "../../assests/vehicles/vovlo/image_5.jpg";
-import img12 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
+// import img12 from "../../assests/vehicles/kia_carnes/kia_carnes_suv.jpg";
 const Gallerycard = () => {
   // Array of image URLs
   const images = [
-    img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12
+    img1,img2,img3,img4,img5,img7,img8,img10,img11,img9
   ];
 
   return (
