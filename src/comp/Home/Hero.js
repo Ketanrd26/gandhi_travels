@@ -21,21 +21,10 @@ import img2 from "../../assests/36seat.png";
 import img3 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
 import img4 from "../../assests/12seat.png";
 import img5 from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
-
-
-
-
-
-
-
-
-
 import img6 from "../../assests/vehicles/kia_carnes/kia.jpg";
 import img7 from "../../assests/vehicles/luxary_urbania/urbania.webp";
 import img8 from "../../assests/vehicles/vovlo/image_5.jpg";
-
 // mobile image
-
 import mob_img1 from "../../assests/mobile_photos/img1.png";
 import mob_img2 from "../../assests/mobile_photos/img2.jpeg";
 import mob_img3 from "../../assests/mobile_photos/img3.png";

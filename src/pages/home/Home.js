@@ -70,8 +70,7 @@ const Home = ({ setVehicleDataTransfer }) => {
                 Email Id: arpit.gandhi26@gmail.com
               </a>{" "}
               <a
-                href="
-amargandhi1975@gmail.com"
+                href="mailto:amargandhi1975@gmail.com"
               >
                 amargandhi1975@gmail.com
               </a>{" "}
