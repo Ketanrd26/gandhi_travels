@@ -21,21 +21,10 @@ import img2 from "../../assests/36seat.png";
 import img3 from "../../assests/vehicles/35_ac_bhartbanz/35_ac_bharatbenz.jpg";
 import img4 from "../../assests/12seat.png";
 import img5 from "../../assests/vehicles/20_s_pushback/20_s_pushback.jpg";
-
-
-
-
-
-
-
-
-
 import img6 from "../../assests/vehicles/kia_carnes/kia.jpg";
 import img7 from "../../assests/vehicles/luxary_urbania/urbania.webp";
 import img8 from "../../assests/vehicles/vovlo/image_5.jpg";
-
 // mobile image
-
 import mob_img1 from "../../assests/mobile_photos/img1.png";
 import mob_img2 from "../../assests/mobile_photos/img2.jpeg";
 import mob_img3 from "../../assests/mobile_photos/img3.png";
@@ -63,10 +52,10 @@ const Hero = () => {
 
   const slides = [
    
-    { id: 1, image: img1, mob_image: mob_img2, overlay: true },
+    { id: 1, image: img1, mob_image: img2, overlay: true },
     { id: 2, image: img2, mob_image: mob_img1, overlay: true },
     { id: 3, image: img3, mob_image: mob_img3, overlay: true },
-    { id: 4, image: img4, mob_image: mob_img4, overlay: true },
+    { id: 4, image: img4, mob_image: img4, overlay: true },
     { id: 5, image: img5, mob_image: mob_img5, overlay: true },
     // { id: 6, image: img6, mob_image: mob_img6, overlay: true },
     // { id: 7, image: img7, mob_image: mob_img7, overlay: true },
