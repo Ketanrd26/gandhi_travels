@@ -32,8 +32,8 @@ const Blog = () => {
 
   function formatDate(dateString) {
     const date = new Date(dateString);
-    const day = String(date.getDate()).padStart(2, '0');
-    const month = String(date.getMonth() + 1).padStart(2, '0');
+    const day = String(date.getDate()).padStart(2, "0");
+    const month = String(date.getMonth() + 1).padStart(2, "0");
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
   }
@@ -52,7 +52,7 @@ const Blog = () => {
         />
         <link rel="canonical" href="https://gandhitravels.co.in/blogdetail" />
       </Helmet>
-      
+
       <Pagetop pagetop_text="Blogs" />
 
       <div className="blog-parent parent">
@@ -69,15 +69,27 @@ const Blog = () => {
                   blog._embedded["wp:term"][0][0].name;
 
                 return (
-                  <Link to={`/blogs/${blog.slug}`} key={blog.id}className="card-link" >
-                    <div className="card" data-aos="fade-up" data-aos-delay="300">
+                  <Link
+                    to={`/blogs/${blog.slug}`}
+                    key={blog.id}
+                    className="card-link"
+                  >
+                    <div
+                      className="card"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
                       <div className="card-data">
                         <div
                           className="card-image bg-img-cover"
                           style={{ backgroundImage: `url(${imageUrl})` }}
                           data-aos="zoom-in"
                         ></div>
-                        <h4 className="card-title" data-aos="fade-up" data-aos-delay="400">
+                        <h4
+                          className="card-title"
+                          data-aos="fade-up"
+                          data-aos-delay="400"
+                        >
                           {blog.title.rendered}
                         </h4>
                         <p
@@ -90,10 +102,18 @@ const Blog = () => {
                         ></p>
                       </div>
                       <div className="bottom-card">
-                        <div className="category" data-aos="fade-left" data-aos-delay="600">
+                        <div
+                          className="category"
+                          data-aos="fade-left"
+                          data-aos-delay="600"
+                        >
                           {category}
                         </div>
-                        <div className="date" data-aos="fade-right" data-aos-delay="700">
+                        <div
+                          className="date"
+                          data-aos="fade-right"
+                          data-aos-delay="700"
+                        >
                           {formatDate(blog.date)}
                         </div>
                       </div>

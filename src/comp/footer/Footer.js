@@ -103,7 +103,7 @@ const Footer = () => {
       </div>
       <div class="after_footer parent">
         <div class="after_footer_cont cont">
-          <a href="https://wa.me/+917028997574">
+          <a href="https://wavesolutions.in/" target="blank">
             Developed By wave solution's
           </a>
           <p>
